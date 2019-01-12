@@ -105,3 +105,4 @@ for_window [class="code-oss"] move to workspace $ws2
 
 # Startup
 exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
+exec_always --no-startup-id $HOME/.local/bin/arch-pacotes.sh
