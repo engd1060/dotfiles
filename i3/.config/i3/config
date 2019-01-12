@@ -104,4 +104,4 @@ for_window [class="TelegramDesktop"] move to workspace $ws2, floating enable, re
 for_window [class="code-oss"] move to workspace $ws2
 
 # Startup
-exec_always --no-startup-id $HOME/.local/bin/wallpapers.sh
+exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
