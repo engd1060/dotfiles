@@ -14,7 +14,7 @@ readonly PACOTES_PACMAN=(
     code
     firefox firefox-i18n-pt-br
     thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman 
-    bumblebee mesa
+    mesa
     xorg-server xorg-xrandr xorg-xbacklight xorg-xinit xorg-xprop xautolock xclip
     linux-headers networkmanager numlockx gvfs unrar unzip wget)
 
