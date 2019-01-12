@@ -1,10 +1,15 @@
 #!/bin/bash
+# github.com/mamutal91
 
-# Finaliza todas barras ativas
 killall -q polybar
 
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-
-# Inicia as barras (trocar os nomes)
-polybar nomedabarra &
-#polybar nomedabarra2 &
+if type "xrandr"; then
+  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+    MONITOR=$m polybar --reload cima &
+    MONITOR=$m polybar --reload baixo &
+  done
+else
+  polybar --reload cima &
+  sleep 1s
+  polybar --reload baixo &
+fi
