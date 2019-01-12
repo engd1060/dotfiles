@@ -102,3 +102,6 @@ bindsym F11 exec --no-startup-id $HOME/github/dotfiles/install.sh
 # Regras de Janelas
 for_window [class="TelegramDesktop"] move to workspace $ws2, floating enable, resize set 1000 px 810 px
 for_window [class="code-oss"] move to workspace $ws2
+
+# Startup
+exec_always --no-startup-id $HOME/.local/bin/wallpapers.sh
