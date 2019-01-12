@@ -99,6 +99,6 @@ bindsym $mod+r mode "resize"
 bindsym F10 exec --no-startup-id $HOME/.local/bin/git-cron.sh
 bindsym F11 exec --no-startup-id $HOME/github/dotfiles/install.sh
 
-# teste
+# Regras de Janelas
 for_window [class="TelegramDesktop"] move to workspace $ws3, floating enable, resize set 1000 px 810 px
 for_window [class="code-oss"] move to workspace $ws5
