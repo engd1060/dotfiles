@@ -9,6 +9,7 @@ function dotfiles(){
 function stows(){
 stow home
 stow i3
+stow polybar
 }
 
 function install(){
