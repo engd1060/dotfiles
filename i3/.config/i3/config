@@ -101,4 +101,4 @@ bindsym F11 exec --no-startup-id $HOME/github/dotfiles/install.sh
 
 # Regras de Janelas
 for_window [class="TelegramDesktop"] move to workspace $ws3, floating enable, resize set 1000 px 810 px
-for_window [class="code-oss"] move to workspace $ws5
+for_window [class="code-oss"] move to workspace $ws2
