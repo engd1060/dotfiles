@@ -461,7 +461,7 @@ ramp-foreground = ${cores.laranja}
 # Wireless
 [module/wireless]
 type = internal/network
-interface = wlp3s0
+interface = wlp36s0
 interval = 1.0
 
 format-connected = <label-connected> <ramp-signal>
