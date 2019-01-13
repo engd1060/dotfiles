@@ -247,18 +247,18 @@ exec = uname -r
 tail = false
 format-foreground = ${cores.fontes}
 
-## Spotify
-#[module/spotify]
-#interval = 1
-#format-prefix = " "
-#format-prefix-foreground = ${cores.spotify}
-#format-padding = 1
-#format-foreground = ${cores.fontes}
-#format-underline = ${cores.transparente}
-#type = custom/script
-#exec = ~/.local/bin/spotify.sh "%artist% - %title% (%album%)"
-#tail = true
-#label-maxlen = 80
+# Spotify
+[module/spotify]
+interval = 1
+format-prefix = " "
+format-prefix-foreground = ${cores.spotify}
+format-padding = 1
+format-foreground = ${cores.fontes}
+format-underline = ${cores.transparente}
+type = custom/script
+exec = ~/.local/bin/spotify.sh "%artist% - %title% (%album%)"
+tail = true
+label-maxlen = 80
 
 # CPU
 [module/cpu]
