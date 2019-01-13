@@ -29,9 +29,9 @@ bindsym F12 exec --no-startup-id $HOME/.local/bin/screenshot.sh
 bindsym --release $mod+K exec --no-startup-id $HOME/.local/bin/screencast.sh
 
 # Audio/Brightness Control
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute
-bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -u -i 5
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -u -d 5e
+bindsym XF86AudioMute exec --no-startup-id pamixer -m
 
 bindsym XF86MonBrightnessUp exec  --no-startup-id echo $((`cat /sys/class/backlight/intel_backlight/brightness` + 10)) | sudo tee /sys/class/backlight/intel_backlight/brightness
 bindsym XF86MonBrightnessDown exec  --no-startup-id echo $((`cat /sys/class/backlight/intel_backlight/brightness` - 10)) | sudo tee /sys/class/backlight/intel_backlight/brightness
