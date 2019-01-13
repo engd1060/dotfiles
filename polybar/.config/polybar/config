@@ -301,35 +301,35 @@ label = %mb_used%
 label-foreground = #F7819F
 
 # Brilho
-[module/brilho]
-type = internal/backlight
-card = intel_backlight
-format = <label> <bar>
+#[module/brilho]
+#type = internal/backlight
+#card = intel_backlight
+#format = <label> <bar>
 
-format-prefix = " "
-format-prefix-foreground = ${cores.icones-modulos}
+#format-prefix = " "
+#format-prefix-foreground = ${cores.icones-modulos}
 
-label = %percentage%%
-label-foreground = ${cores.fontes}
+#label = %percentage%%
+#label-foreground = ${cores.fontes}
 
-bar-indicator = |
-bar-indicator-foreground = ${cores.icones-modulos}
-bar-fill = ─
-bar-gradient = true
-bar-empty= ─
-bar-empty-foreground = ${cores.cinzaescuro}
-bar-width = 8
-bar-foreground-0 = #D8CEF6
-bar-foreground-1 = #D0A9F5
-bar-foreground-2 = #DA81F5
-bar-foreground-3 = #FA58F4
-bar-foreground-4 = #FE2EC8
-bar-foreground-5 = #FF0080
-bar-foreground-6 = #DF013A
+#bar-indicator = |
+#bar-indicator-foreground = ${cores.icones-modulos}
+#bar-fill = ─
+#bar-gradient = true
+#bar-empty= ─
+#bar-empty-foreground = ${cores.cinzaescuro}
+#bar-width = 8
+#bar-foreground-0 = #D8CEF6
+#bar-foreground-1 = #D0A9F5
+#bar-foreground-2 = #DA81F5
+#bar-foreground-3 = #FA58F4
+#bar-foreground-4 = #FE2EC8
+#bar-foreground-5 = #FF0080
+#bar-foreground-6 = #DF013A
 
 # Volume
 [module/volume]
-type = internal/alsa
+type = internal/pulseauddio
 interval = 5
 use-ui-max = false
 sink = alsa_output.pci-0000_00_1f.3.analog-stereo
@@ -360,6 +360,9 @@ bar-volume-foreground-4 = #FE2EC8
 bar-volume-foreground-5 = #FF0080
 bar-volume-foreground-6 = #DF013A
 
+
+
+
 # Data
 [module/data]
 type = internal/date
@@ -385,50 +388,50 @@ label = %time%
 label-foreground = ${cores.fontes}
 
 # Bateria
-[module/bateria]
-battery = BAT1
-adapter = ADP1
-type = internal/battery
-full-at = 80
-interval = 1
-poll-interval = 5
-time-format = %H:%M
+#[module/bateria]
+#battery = BAT1
+#adapter = ADP1
+#type = internal/battery
+#full-at = 80
+#interval = 1
+#poll-interval = 5
+#time-format = %H:%M
 
-format-charging = <animation-charging> <label-charging>
-format-discharging = <ramp-capacity> <label-discharging>
+#format-charging = <animation-charging> <label-charging>
+#format-discharging = <ramp-capacity> <label-discharging>
 
-format-charging-underline = ${cores.transparente}
-format-discharging-underline = ${cores.transparente}
+#format-charging-underline = ${cores.transparente}
+#format-discharging-underline = ${cores.transparente}
 
-format-charging-foreground = ${cores.verde}
-format-discharging-foreground = ${cores.vermelho}
-format-full-foreground = ${cores.icones-modulos}
+#format-charging-foreground = ${cores.verde}
+#format-discharging-foreground = ${cores.vermelho}
+#format-full-foreground = ${cores.icones-modulos}
 
-label-charging = %percentage%%
-label-charging-foreground = ${cores.fontes}
+#label-charging = %percentage%%
+#label-charging-foreground = ${cores.fontes}
 
-label-discharging = %percentage%%
-label-discharging-foreground = ${cores.fontes}
+#label-discharging = %percentage%%
+#label-discharging-foreground = ${cores.fontes}
 
-format-full-prefix = " "
-format-full-prefix-foreground = ${cores.icones-modulos}
-label-full = 100%
-label-full-foreground = ${cores.fontes}
+#format-full-prefix = " "
+#format-full-prefix-foreground = ${cores.icones-modulos}
+#label-full = 100%
+#label-full-foreground = ${cores.fontes}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+#ramp-capacity-0 = 
+#ramp-capacity-1 = 
+#ramp-capacity-2 = 
+#ramp-capacity-3 = 
+#ramp-capacity-4 = 
 
-bar-capacity-width = 20
+#bar-capacity-width = 20
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
-animation-charging-framerate = 220
+#animation-charging-0 = 
+#animation-charging-1 = 
+#animation-charging-2 = 
+#animation-charging-3 = 
+#animation-charging-4 = 
+#animation-charging-framerate = 220
 
 # Temperatura
 [module/temperatura]
