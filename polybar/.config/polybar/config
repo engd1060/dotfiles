@@ -434,44 +434,11 @@ label-foreground = ${cores.fontes}
 #animation-charging-4 = 
 #animation-charging-framerate = 220
 
-# Temperatura
-[module/temperatura]
-type = internal/temperature
-interval = 0.5
-thermal-zone = 0
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
-warn-temperature = 60
-units = true
 
-format = <ramp> <label>
-format-underline = ${cores.transparente}
-
-format-warn = <ramp> <label-warn>
-
-label = %temperature-c%
-label-foreground = ${cores.fontes}
-
-label-warn = %temperature-c%
-label-warn-foreground = ${cores.fontes}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${cores.laranja}
-
-
-; Temperature
-;
-[module/temperature]
-type = custom/script
-interval = 1.5
-exec = sensors | awk '/Core/ {print substr($3, 2, 2) " C"}' | tr '\n' ' '
-
-format-prefix = " "
-format-foreground = ${colors.foreground-alt}
 
 
 # temeratura
+[module/temperatura]
 type = custom/script
 
 format-prefix = "%{F#ffff55} %{F-}"
