@@ -470,6 +470,14 @@ exec = sensors | awk '/Core/ {print substr($3, 2, 2) " C"}' | tr '\n' ' '
 format-prefix = " "
 format-foreground = ${colors.foreground-alt}
 
+
+# temeratura
+type = custom/script
+
+format-prefix = "%{F#ffff55} %{F-}"
+exec = command sensors > /dev/null 2>&1 && sensors | awk '/Core 1/{print sustr($3,2)" " p}{p= substr($3,2)}'
+
+
 # Wireless
 [module/wireless]
 type = internal/network
