@@ -438,7 +438,7 @@ label-foreground = ${cores.fontes}
 
 
 # temeratura
-[module/temperatura]
+[module/temperature]
 type = custom/script
 interval = 1.0
 
