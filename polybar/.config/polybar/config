@@ -438,18 +438,40 @@ label-foreground = ${cores.fontes}
 
 
 # tepmeratura
-[module/temperatura]
-type = custom/script
-interval = 1.0
+#[module/temperatura]
+#type = custom/script
+#interval = 1.0
 
-format-prefix = "%{F#ff5555} %{F-}"
-exec = command sensors > /dev/null 2>&1 && sensors -u | awk '/Tdie/{print substr($2,2)" "}'
+#format-prefix = "%{F#ff5555} %{F-}"
+#exec = command sensors > /dev/null 2>&1 && sensors -u | awk '/Tdie/{print substr($2,2)" "}'
 
 
 #substr(s, a, b) : it returns b number of chars from string s, starting at position a. 
 #The parameter b is optional, in which case it means up to the end of the string.
 
+[module/temperature]
+type = internal/temperature
 
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+
+; Thermal zone to use
+; To list all the zone types, run 
+; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
+; Default: 0
+thermal-zone = 0
+
+; Full path of temperature sysfs path
+; Use `sensors` to find preferred temperature source, then run
+; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
+; to find path to desired file
+; Default reverts to thermal zone setting
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
+
+; Threshold temperature to display warning label (in degrees celsius)
+; Default: 80
+warn-temperature = 60
 
 # Wireless
 [module/wireless]
