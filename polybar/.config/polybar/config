@@ -437,8 +437,8 @@ label-foreground = ${cores.fontes}
 
 
 
-# temeratura
-[module/temperature]
+# tepmeratura
+[module/temperatura]
 type = custom/script
 interval = 1.0
 
@@ -448,6 +448,32 @@ exec = command sensors > /dev/null 2>&1 && sensors | awk '/Tdie/{print substr($2
 
 #substr(s, a, b) : it returns b number of chars from string s, starting at position a. 
 #The parameter b is optional, in which case it means up to the end of the string.
+
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 70
+
+format = <ramp> <label>
+format-underline = #f50a4d
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = %temperatura-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.secondary}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
+
+
+
+
+
+
 
 
 # Wireless
