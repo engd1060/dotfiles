@@ -442,7 +442,7 @@ label-foreground = ${cores.fontes}
 type = custom/script
 
 format-prefix = "%{F#ffff55} %{F-}"
-exec = command sensors > /dev/null 2>&1 && sensors | awk '/temp1/{print sustr($3,2)" " p}{p= substr($3,2)}'
+exec = command sensors > /dev/null 2>&1 && sensors | awk '/temp1/{print substr($3,2)" " p}{p= substr($3,2)}'
 
 
 # Wireless
