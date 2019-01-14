@@ -206,7 +206,7 @@ label-mounted-foreground = ${cores.verdeclaro}
 # Discos/Storage
 [module/storage]
 type = internal/fs
-mount-0 = /run
+mount-0 = /run/media/d1060/DIOGO-8GB
 interval = 10
 fixed-values = true
 
