@@ -297,8 +297,12 @@ format = <label>
 format-prefix = " RAM "
 format-prefix-foreground = #B40431
 
-label = %mb_used% %percentage%%
+label = %mb_used% 
 label-foreground = #F7819F
+
+#label = %percentage%%
+#label-foreground = #F7819F
+
 
 # Brilho
 #[module/brilho]
