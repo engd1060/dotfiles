@@ -103,7 +103,8 @@ bindsym F10 exec --no-startup-id $HOME/.local/bin/git-cron.sh
 bindsym F11 exec --no-startup-id $HOME/github/dotfiles/install.sh
 
 # Regras de Janelas
-for_window [class="TelegramDesktop"] move to workspace $ws3 resize set 800 px 700 px
+# sudo xprop | grep -i 'class' # para descobrir a class
+for_window [class="TelegramDesktop"] move to workspace $ws3 resize floating enable, set 800 px 700 px
 for_window [class="code-oss"] move to workspace $ws5
 for_window [class="Spotify"] move to workspace $ws4
 
@@ -111,3 +112,7 @@ for_window [class="Spotify"] move to workspace $ws4
 # Startup
 exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+
+
+
