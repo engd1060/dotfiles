@@ -270,7 +270,7 @@ format-prefix = " CPU "
 format-prefix-foreground = #FF8000
 
 label = %percentage%%
-label-foreground = #F5A9BC
+label-foreground = #FF8000
 
 ramp-coreload-0 = ▁
 ramp-coreload-0-foreground = #F5A9BC
