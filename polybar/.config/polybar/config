@@ -443,7 +443,7 @@ type = custom/script
 interval = 1.0
 
 format-prefix = "%{F#ff5555} %{F-}"
-exec = command sensors > /dev/null 2>&1 && sensors | awk '/Tdie/{print substr($2,2)" "}'
+exec = command sensors > /dev/null 2>&1 && sensors -u | awk '/Tdie/{print substr($2,2)" "}'
 
 
 #substr(s, a, b) : it returns b number of chars from string s, starting at position a. 
