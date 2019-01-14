@@ -206,7 +206,7 @@ label-mounted-foreground = ${cores.verdeclaro}
 # Discos/Storage
 [module/storage]
 type = internal/fs
-mount-0 = /run/media/d1060/DIOGO-8GB
+mount-0 = /run/media/d1060/
 interval = 10
 fixed-values = true
 
@@ -214,7 +214,7 @@ format-mounted-prefix = " storage "
 format-mounted-prefix-foreground = ${cores.roxo}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
-label-mounted = %used%%
+label-mounted = %used% 
 label-mounted-foreground = ${cores.roxoclaro}
 
 # Usuário
