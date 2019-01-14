@@ -442,7 +442,7 @@ label-foreground = ${cores.fontes}
 type = custom/script
 interval = 1.0
 
-format-prefix = "%{F#ffff55} %{F-}"
+format-prefix = "%{F#ff5555} %{F-}"
 exec = command sensors > /dev/null 2>&1 && sensors | awk '/Tdie/{print substr($2,2)" "}'
 
 
