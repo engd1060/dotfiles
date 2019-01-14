@@ -329,40 +329,66 @@ label-foreground = #F7819F
 #bar-foreground-6 = #DF013A
 
 # Volume
-[module/volume]
-type = internal/alsa
-interval = 5
-use-ui-max = false
+#[module/volume]
+#type = internal/alsa
+#interval = 5
+#use-ui-max = false
 
 #sink = alsa_output.pci-0000_26_00.1.hdmi-stereo-extra2
-sink = alsa_output.pci-0000_26_00.1.hdmi-stereo-extra2.monitor
+#sink = alsa_output.pci-0000_26_00.1.hdmi-stereo-extra2.monitor
 
-format-volume-prefix = " "
+#format-volume-prefix = " "
 #format-volume-prefix-foreground = ${cores.icones-modulos}
 
+#format-volume = <label-volume> <bar-volume>
+
+#label-volume = %percentage%%
+#label-volume-foreground = ${cores.fontes}
+
+#label-muted =  MUTE ───────
+#label-muted-foreground = ${cores.icones-modulos}
+
+#bar-volume-gradient = true
+#bar-volume-indicator = |
+#bar-volume-indicator-foreground = ${cores.icones-modulos}
+#bar-volume-fill = ─
+#bar-volume-empty = ─
+#bar-volume-empty-foreground = ${cores.cinzaescuro}
+#bar-volume-width = 8
+#bar-volume-foreground-0 = #D8CEF6
+#bar-volume-foreground-1 = #D0A9F5
+#bar-volume-foreground-2 = #DA81F5
+#bar-volume-foreground-3 = #FA58F4
+#bar-volume-foreground-4 = #FE2EC8
+#bar-volume-foreground-5 = #FF0080
+#bar-volume-foreground-6 = #DF013A
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
 format-volume = <label-volume> <bar-volume>
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.foreground}
 
-label-volume = %percentage%%
-label-volume-foreground = ${cores.fontes}
+label-muted = 🔇 muted
+label-muted-foreground = #666
 
-label-muted =  MUTE ───────
-label-muted-foreground = ${cores.icones-modulos}
-
-bar-volume-gradient = true
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
 bar-volume-indicator = |
-bar-volume-indicator-foreground = ${cores.icones-modulos}
+bar-volume-indicator-font = 2
 bar-volume-fill = ─
+bar-volume-fill-font = 2
 bar-volume-empty = ─
-bar-volume-empty-foreground = ${cores.cinzaescuro}
-bar-volume-width = 8
-bar-volume-foreground-0 = #D8CEF6
-bar-volume-foreground-1 = #D0A9F5
-bar-volume-foreground-2 = #DA81F5
-bar-volume-foreground-3 = #FA58F4
-bar-volume-foreground-4 = #FE2EC8
-bar-volume-foreground-5 = #FF0080
-bar-volume-foreground-6 = #DF013A
-
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
 
 
 
