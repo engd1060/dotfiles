@@ -200,7 +200,7 @@ format-mounted-prefix = " root "
 format-mounted-prefix-foreground = ${cores.verde}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
-label-mounted = %used%
+label-mounted = %mountpoint%: %percentage_used%% de %total%
 label-mounted-foreground = ${cores.verdeclaro}
 
 # Discos/Storage
