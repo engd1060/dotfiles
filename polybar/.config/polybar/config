@@ -220,7 +220,7 @@ label-mounted-foreground = ${cores.roxoclaro}
 # Usuário
 [module/usuario]
 type = custom/script
-interval = 1
+interval = 5
 
 format-prefix = " "
 format-prefix-foreground = ${cores.azul}
