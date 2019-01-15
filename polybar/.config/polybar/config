@@ -391,12 +391,12 @@ label-foreground = ${cores.fontes}
 
 # tepmeratura
 [module/temperatura]
-type = custom/script
-interval = 1000.0
-
+type = internal/temperature
+interval = 1.0
+format-prefix = "%{F#ff5555} %{F-}"
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 #/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
-format-prefix = "%{F#ff5555} %{F-}"
+
 #exec = command sensors > /dev/null 2>&1 && sensors -u | awk '/Tdie/{print substr($2,2)" "}'
 
 
