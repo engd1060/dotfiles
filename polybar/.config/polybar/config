@@ -214,7 +214,7 @@ format-mounted-prefix = " storage "
 format-mounted-prefix-foreground = ${cores.roxo}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
-label-mounted = %used% 
+label-mounted = %mountpoint%: %percentage_free%% of %total%
 label-mounted-foreground = ${cores.roxoclaro}
 
 # Usuário
