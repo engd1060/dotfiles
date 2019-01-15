@@ -336,8 +336,7 @@ use-ui-max = false
 
 #sink = alsa_output.pci-0000_26_00.1.hdmi-stereo-extra2
 #sink = alsa_output.pci-0000_26_00.1.hdmi-stereo-extra2.monitor
-sink = alsa_output.pci-0000_26_00.1.hdmi-stereo-extra2.monitor
-#alsa_output.pci-0000_12_00.3.analog-stereo
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
 format-volume-prefix = " "
 format-volume-prefix-foreground = ${cores.icones-modulos}
 
