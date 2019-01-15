@@ -393,15 +393,9 @@ label-foreground = ${cores.fontes}
 [module/temperatura]
 type = internal/temperature
 interval = 1.0
-format-prefix = "%{F#ff5555} "
+format-prefix = "%{F#ff6655} "
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
-#/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
-
-#exec = command sensors > /dev/null 2>&1 && sensors -u | awk '/Tdie/{print substr($2,2)" "}'
-
-
-#substr(s, a, b) : it returns b number of chars from string s, starting at position a. 
-#The parameter b is optional, in which case it means up to the end of the string.
+warn-temperature = 40
 
 
 # Wireless
