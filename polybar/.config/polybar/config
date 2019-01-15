@@ -196,7 +196,7 @@ mount-0 = /
 interval = 10
 fixed-values = true
 
-format-mounted-prefix = " root "
+format-mounted-prefix = " "
 format-mounted-prefix-foreground = ${cores.verde}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
