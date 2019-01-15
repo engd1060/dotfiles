@@ -249,7 +249,7 @@ format-foreground = ${cores.fontes}
 
 # Spotify
 [module/spotify]
-interval = 1
+interval = 1.5
 format-prefix = " "
 format-prefix-foreground = ${cores.spotify}
 format-padding = 1
