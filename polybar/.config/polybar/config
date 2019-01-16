@@ -401,22 +401,14 @@ units = true
 ;   <ramp>
 format = <ramp> 
 
-
-
-; Available tokens:
-;   %temperature% (deprecated)
-;   %temperature-c%   (default, temperature in °C)
-;   %temperature-f%   (temperature in °F)
 label = %temperature-c%
 
-; Requires the <ramp> tag
-; The icon selection will range from 0 to `warn-temperature`
-; with the current temperature as index.
-ramp-0 = %temperature-c%
-ramp-1 = %temperature-c%
+ramp-0 = 
+ramp-0-foreground = 5555ff
+ramp-1 = 
+ramp-1-foreground = eeffff
+ramp-2 = 
 ramp-1-foreground = ffffff
-ramp-2 = %temperature-c%
-ramp-foreground = #55
 
 ; Available tags:
 ;   <label-warn> (default)
