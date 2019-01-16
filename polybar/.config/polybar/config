@@ -398,8 +398,10 @@ hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 #warn-temperature = 60
 format = <ramp> <label>
 
-ramp-0 = A
+ramp-0 = hwmon
+ramp-foreground = #55ffff
 ramp-1 = B
+ramp-foreground = #55ffff
 ramp-2 = C
 ramp-foreground = #55ffff
 
