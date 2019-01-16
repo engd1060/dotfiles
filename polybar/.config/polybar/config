@@ -399,9 +399,9 @@ hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 format = <ramp> <label>
 
 ramp-0 = a
-ramp-foreground = #55ffff
+
 ramp-1 = b
-ramp-foreground = #55ffff
+
 ramp-2 = c
 ramp-foreground = #55ffff
 
