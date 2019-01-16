@@ -311,10 +311,11 @@ output = DisplayPort-2
 
 ; Create scroll handlers used to set the backlight value
 ; Default: true
-#enable-scroll = false
+enable-scroll = true
 
 format-prefix = " "
-format-prefix-foreground = ${cores.icones-modulos}
+format-prefix-foreground = #FFFFFF
+ #${cores.icones-modulos}
 
 label = %percentage%%
 label-foreground = ${cores.fontes}
