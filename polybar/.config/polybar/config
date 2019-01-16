@@ -390,10 +390,17 @@ label-foreground = ${cores.fontes}
 [module/temperatura]
 type = internal/temperature
 interval = 1.0
-format-prefix = "%{xrdb:color3} "
+format-prefix = "%{F#ff0000} "
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 
-warn-temperature = 35
+format = <ramp> <label>
+
+ramp-0 =  %temperature-c%
+ramp-1 =  %temperature-c%
+ramp-2 =  %temperature-c%
+ramp-foreground = #FFFFFF
+
+warn-temperature = 60
 label-warn =  %temperature-c%
 label-warn-foreground = #f00
 
