@@ -390,7 +390,7 @@ label-foreground = ${cores.fontes}
 [module/temperatura]
 type = internal/temperature
 interval = 1.0
-format-prefix = "%{F#dd5555} "
+#format-prefix = "%{F#dd5555} "
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 
 
@@ -408,7 +408,7 @@ ramp-0-foreground = 5555ff
 ramp-1 = 
 ramp-1-foreground = eeffff
 ramp-2 = 
-ramp-1-foreground = ffffff
+ramp-2-foreground = ffffff
 
 ; Available tags:
 ;   <label-warn> (default)
