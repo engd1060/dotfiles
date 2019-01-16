@@ -334,6 +334,7 @@ type = internal/pulseaudio
 interval = 5
 use-ui-max = false
 
+
 format-volume-prefix = " "
 format-volume-prefix-foreground = ${cores.icones-modulos}
 
@@ -392,7 +393,7 @@ interval = 1.0
 format-prefix = "%{color1} "
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 
-warn-temperature = 40
+warn-temperature = 35
 label-warn =  %temperature-c%
 label-warn-foreground = #f00
 
