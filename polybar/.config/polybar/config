@@ -418,6 +418,7 @@ label = TEMP %temperature-c%
 ; with the current temperature as index.
 ramp-0 = A
 ramp-1 = %temperature-c%
+ramp-1-foreground = ffffff
 ramp-2 = C
 ramp-foreground = #55
 
