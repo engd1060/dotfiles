@@ -302,31 +302,37 @@ label-foreground = #F7819F
 
 
 # Brilho
-#[module/brilho]
-#type = internal/backlight
-#card = intel_backlight
-#format = <label> <bar>
+[module/backlight]
+type = internal/xbacklight
 
-#format-prefix = " "
-#format-prefix-foreground = ${cores.icones-modulos}
+; XRandR output to get get values from
+; Default: the monitor defined for the running bar
+#output = HDMI-1
 
-#label = %percentage%%
-#label-foreground = ${cores.fontes}
+; Create scroll handlers used to set the backlight value
+; Default: true
+#enable-scroll = false
 
-#bar-indicator = |
-#bar-indicator-foreground = ${cores.icones-modulos}
-#bar-fill = ─
-#bar-gradient = true
-#bar-empty= ─
-#bar-empty-foreground = ${cores.cinzaescuro}
-#bar-width = 8
-#bar-foreground-0 = #D8CEF6
-#bar-foreground-1 = #D0A9F5
-#bar-foreground-2 = #DA81F5
-#bar-foreground-3 = #FA58F4
-#bar-foreground-4 = #FE2EC8
-#bar-foreground-5 = #FF0080
-#bar-foreground-6 = #DF013A
+format-prefix = " "
+format-prefix-foreground = ${cores.icones-modulos}
+
+label = %percentage%%
+label-foreground = ${cores.fontes}
+
+bar-indicator = |
+bar-indicator-foreground = ${cores.icones-modulos}
+bar-fill = ─
+bar-gradient = true
+bar-empty= ─
+bar-empty-foreground = ${cores.cinzaescuro}
+bar-width = 8
+bar-foreground-0 = #D8CEF6
+bar-foreground-1 = #D0A9F5
+bar-foreground-2 = #DA81F5
+bar-foreground-3 = #FA58F4
+bar-foreground-4 = #FE2EC8
+bar-foreground-5 = #FF0080
+bar-foreground-6 = #DF013A
 
 # Volume
 [module/volume]
@@ -386,7 +392,7 @@ format-foreground = ${cores.rosa}
 label = %time%
 label-foreground = ${cores.fontes}
 
-# tepmeratura
+# temperatura
 [module/temperatura]
 type = internal/temperature
 interval = 1.0
@@ -402,6 +408,7 @@ format = <label>
 label =  %temperature-c%
 label-foreground = #fee
 
+# ramp vai de 0 até warn-temperature
 ramp-0 = 
 ramp-0-foreground = 0000ff
 ramp-1 = 
