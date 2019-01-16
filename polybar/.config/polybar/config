@@ -273,8 +273,8 @@ type = internal/cpu
 interval = 0.5
 format = <label> <ramp-coreload>
 
-format-prefix = " "
-format-prefix-foreground = #FF8000
+#format-prefix = 
+#format-prefix-foreground = #FF8000
 
 label = %percentage%%
 label-foreground = #FF8000
@@ -440,7 +440,7 @@ ramp-7-foreground = ff0000
 ;   <ramp>
 format-warn = <label-warn>
 warn-temperature = 50
-label-warn =  %temperature-c%
+label-warn =  Ryzen  %temperature-c%
 label-warn-foreground = #f00
 
 
