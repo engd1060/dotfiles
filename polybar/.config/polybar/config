@@ -424,7 +424,7 @@ ramp-7-foreground = ff0000
 ;   <label-warn> (default)
 ;   <ramp>
 format-warn = <label-warn>
-warn-temperature = 1000
+warn-temperature = 70
 label-warn =  %temperature-c%
 label-warn-foreground = #f00
 
