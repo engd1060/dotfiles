@@ -392,8 +392,6 @@ type = internal/temperature
 interval = 1.0
 #format-prefix = "%{F#dd5555} "
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
-
-
 units = true
 
 ; Available tags:
@@ -424,7 +422,7 @@ ramp-7-foreground = ff0000
 ;   <label-warn> (default)
 ;   <ramp>
 format-warn = <label-warn>
-warn-temperature = 70
+warn-temperature = 10
 label-warn =  %temperature-c%
 label-warn-foreground = #f00
 
