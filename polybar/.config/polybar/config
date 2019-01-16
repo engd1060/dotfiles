@@ -334,10 +334,6 @@ type = internal/pulseaudio
 interval = 5
 use-ui-max = false
 
-#sink = alsa_output.pci-0000_26_00.1.hdmi-stereo-extra2
-#sink = alsa_output.pci-0000_26_00.1.hdmi-stereo-extra2.monitor
-#sink = alsa_output.pci-0000_12_00.3.analog-stereo
-#sink = alsa_output.pci-0000_26_00.1.hdmi-stereo-extra2
 format-volume-prefix = " "
 format-volume-prefix-foreground = ${cores.icones-modulos}
 
@@ -393,10 +389,10 @@ label-foreground = ${cores.fontes}
 [module/temperatura]
 type = internal/temperature
 interval = 1.0
-format-prefix = "%{F#ff5555} "
+format-prefix = "%{color1} "
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 
-warn-temperature = 35
+warn-temperature = 40
 label-warn =  %temperature-c%
 label-warn-foreground = #f00
 
