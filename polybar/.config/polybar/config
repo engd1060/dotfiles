@@ -230,10 +230,12 @@ format-foreground = ${cores.azul}
 
 # Placa de vídeo
 [module/placadevideo]
-type = custom/script
+type = internal/temperature
 interval = 1
+hwmon-path = /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/hwmon/hwmon2/temp1_input
 
-exec = echo RX480 8GB
+format = <label>
+label = RX480 %temperature-c%
 format-foreground = ${cores.azul}
 
 # Kernel
