@@ -307,32 +307,34 @@ type = internal/xbacklight
 
 ; XRandR output to get get values from
 ; Default: the monitor defined for the running bar
-output = DisplayPort-2 
+output = HDMI-1
 
 ; Create scroll handlers used to set the backlight value
 ; Default: true
 enable-scroll = true
 
-format-prefix = " "
-format-prefix-foreground = ${cores.icones-modulos}
+; Available tags:
+;   <label> (default)
+;   <ramp>
+;   <bar>
+format = <label>
 
+; Available tokens:
+;   %percentage% (default)
 label = %percentage%%
-label-foreground = ${cores.fontes}
 
+; Only applies if <ramp> is used
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
+
+; Only applies if <bar> is used
+bar-width = 10
 bar-indicator = |
-bar-indicator-foreground = ${cores.icones-modulos}
 bar-fill = ─
-bar-gradient = true
-bar-empty= ─
-bar-empty-foreground = ${cores.cinzaescuro}
-bar-width = 8
-bar-foreground-0 = #D8CEF6
-bar-foreground-1 = #D0A9F5
-bar-foreground-2 = #DA81F5
-bar-foreground-3 = #FA58F4
-bar-foreground-4 = #FE2EC8
-bar-foreground-5 = #FF0080
-bar-foreground-6 = #DF013A
+bar-empty = ─
 
 # Volume
 [module/volume]
