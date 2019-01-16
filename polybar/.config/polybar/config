@@ -394,7 +394,7 @@ format-prefix = "%{F#dd5555} "
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 
 format = <ramp> <label>
-
+label = TEMP %temperature-c%
 ramp-0 = %temperature-c%
 ramp-0-foreground = 00ff00
 ramp-1 = %temperature-c%
