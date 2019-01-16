@@ -396,7 +396,12 @@ interval = 1.0
 format-prefix = "%{F#ff5555} "
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 #warn-temperature = 60
-#format = <ramp> <CPU>
+format = <ramp> <label>
+
+ramp-0 = A
+ramp-1 = B
+ramp-2 = C
+ramp-foreground = #55ffff
 
 # Wireless
 [module/wireless]
