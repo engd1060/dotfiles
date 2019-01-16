@@ -239,9 +239,9 @@ format-foreground = ${cores.azul}
 # Kernel
 [module/kernel]
 type = custom/script
-interval = 1
+interval = 10
 
-format-prefix = " Kernel "
+format-prefix = " "
 format-prefix-foreground = ${cores.icones-modulos}
 exec = uname -r
 tail = false
@@ -307,7 +307,7 @@ type = internal/xbacklight
 
 ; XRandR output to get get values from
 ; Default: the monitor defined for the running bar
-#output = DisplayPort-2
+output = DisplayPort-2
 
 ; Create scroll handlers used to set the backlight value
 ; Default: true
