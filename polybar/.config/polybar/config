@@ -273,7 +273,7 @@ type = internal/cpu
 interval = 0.5
 format = <label> <ramp-coreload>
 
-format-prefix = " CPU "
+format-prefix = "CPU "
 format-prefix-foreground = #FF8000
 
 label = %percentage%%
@@ -414,7 +414,7 @@ units = true
 ;   <ramp>
 format = <label> 
 
-label =  %temperature-c%
+label =  %temperature-c%
 label-foreground = #fee
 
 # ramp vai de 0 até warn-temperature
