@@ -404,17 +404,27 @@ format = <ramp>
 label = %temperature-c%
 
 ramp-0 = 
-ramp-0-foreground = 5555ff
+ramp-0-foreground = 0000ff
 ramp-1 = 
-ramp-1-foreground = eeffff
+ramp-1-foreground = 5555ff
 ramp-2 = 
-ramp-2-foreground = ffffff
+ramp-2-foreground = 7777ff
+ramp-3 = 
+ramp-3-foreground = 888888
+ramp-4 = 
+ramp-4-foreground = ff8888
+ramp-5 = 
+ramp-5-foreground = ff7777
+ramp-6 = 
+ramp-6-foreground = ff5555
+ramp-7 = 
+ramp-7-foreground = ff0000
 
 ; Available tags:
 ;   <label-warn> (default)
 ;   <ramp>
 format-warn = <label-warn>
-warn-temperature = 60
+warn-temperature = 1000
 label-warn =  %temperature-c%
 label-warn-foreground = #f00
 
