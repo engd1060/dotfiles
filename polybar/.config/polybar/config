@@ -397,9 +397,9 @@ units = true
 ; Available tags:
 ;   <label> (default)
 ;   <ramp>
-format = <ramp> 
+format = <label> 
 
-label = %temperature-c%
+label =  %temperature-c%
 
 ramp-0 = 
 ramp-0-foreground = 0000ff
@@ -422,7 +422,7 @@ ramp-7-foreground = ff0000
 ;   <label-warn> (default)
 ;   <ramp>
 format-warn = <label-warn>
-warn-temperature = 10
+warn-temperature = 50
 label-warn =  %temperature-c%
 label-warn-foreground = #f00
 
