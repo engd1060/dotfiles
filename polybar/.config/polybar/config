@@ -401,10 +401,7 @@ units = true
 ;   <ramp>
 format = <ramp> 
 
-; Available tags:
-;   <label-warn> (default)
-;   <ramp>
-format-warn = <ramp> <label-warn>
+
 
 ; Available tokens:
 ;   %temperature% (deprecated)
@@ -421,6 +418,10 @@ ramp-1-foreground = ffffff
 ramp-2 = C
 ramp-foreground = #55
 
+; Available tags:
+;   <label-warn> (default)
+;   <ramp>
+format-warn = <label-warn>
 warn-temperature = 60
 label-warn =  %temperature-c%
 label-warn-foreground = #f00
