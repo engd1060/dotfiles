@@ -302,7 +302,7 @@ type = internal/memory
 format = <label>
 
 format-prefix = " RAM "
-format-prefix-foreground = #B40499
+format-prefix-foreground = #B4a1c9
 
 label = %mb_used% 
 label-foreground = #F7819F
