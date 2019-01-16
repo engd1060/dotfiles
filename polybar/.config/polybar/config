@@ -399,7 +399,8 @@ units = true
 ;   <ramp>
 format = <label> 
 
-label = temp %temperature-c%
+label =  %temperature-c%
+label-foreground = #fee
 
 ramp-0 = 
 ramp-0-foreground = 0000ff
