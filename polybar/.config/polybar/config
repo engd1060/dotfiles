@@ -122,7 +122,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=9;1"
 
 modules-left = menu-power lock exit memoria cpu kernel
 modules-center = janela
-modules-right = ethernet wireless brilho volume
+modules-right = ethernet wireless backlight volume
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -314,8 +314,7 @@ output = DisplayPort-2
 enable-scroll = true
 
 format-prefix = " "
-format-prefix-foreground = #FFFFFF
- #${cores.icones-modulos}
+format-prefix-foreground = ${cores.icones-modulos}
 
 label = %percentage%%
 label-foreground = ${cores.fontes}
