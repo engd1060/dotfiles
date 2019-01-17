@@ -445,7 +445,7 @@ label-warn-foreground = #f00
 
 
 
-# Wireless  ●○
+# Wireless  ●○◯⬤◯⬤
 [module/wireless]
 type = internal/network
 interface = wlp36s0
