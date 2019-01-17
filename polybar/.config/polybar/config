@@ -468,6 +468,7 @@ ramp-signal-4 = ●●●●○
 ;ramp-signal-4-foreground = #BADE72
 ramp-signal-5 = ●●●●●
 ;ramp-signal-5-foreground = #96DE72
+ramp-signal-foreground = ${cores.fontes}
 
 # Ethernet
 [module/ethernet]
