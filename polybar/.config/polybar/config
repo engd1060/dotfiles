@@ -445,7 +445,7 @@ label-warn-foreground = #f00
 
 
 
-# Wireless
+# Wireless  ●○
 [module/wireless]
 type = internal/network
 interface = wlp36s0
@@ -456,18 +456,18 @@ format-packetloss = <animation-packetloss>
 label-connected = %upspeed%   %downspeed%  %essid%
 label-connected-foreground = ${cores.fontes}
 
-ramp-signal-0 = 
-ramp-signal-0-foreground = #BD574C
-ramp-signal-1 = 
-ramp-signal-1-foreground = #FF8066
-ramp-signal-2 = 
-ramp-signal-2-foreground = #F5DE72
-ramp-signal-3 = 
-ramp-signal-3-foreground = #D8DE72
-ramp-signal-4 = 
-ramp-signal-4-foreground = #BADE72
-ramp-signal-5 = 
-ramp-signal-5-foreground = #96DE72
+ramp-signal-0 = ○○○○○
+;ramp-signal-0-foreground = #BD574C
+ramp-signal-1 = ●○○○○
+;ramp-signal-1-foreground = #FF8066
+ramp-signal-2 = ●●○○○
+;ramp-signal-2-foreground = #F5DE72
+ramp-signal-3 = ●●●○○
+;ramp-signal-3-foreground = #D8DE72
+ramp-signal-4 = ●●●●○
+;ramp-signal-4-foreground = #BADE72
+ramp-signal-5 = ●●●●●
+;ramp-signal-5-foreground = #96DE72
 
 # Ethernet
 [module/ethernet]
