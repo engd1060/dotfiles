@@ -416,7 +416,7 @@ units = true
 ;   <ramp>
 format = <label> 
 
-label = yzen %temperature-c%
+label = yzen %temperature-c%
 label-foreground = #FF8000
 
 # ramp vai de 0 até warn-temperature
@@ -442,7 +442,7 @@ ramp-7-foreground = ff0000
 ;   <ramp>
 format-warn = <label-warn>
 warn-temperature = 50
-label-warn =  Ryzen  %temperature-c%
+label-warn = Ryzen  %temperature-c%
 label-warn-foreground = #f00
 
 
@@ -455,7 +455,7 @@ interval = 1.0
 
 format-connected = <label-connected> <ramp-signal>
 format-packetloss = <animation-packetloss>
-label-connected =  %upspeed%   %downspeed%   %essid%
+label-connected =  %upspeed%   %downspeed%  %essid%
 label-connected-foreground = ${cores.fontes}
 
 ramp-signal-0 = ○○○○○
@@ -521,10 +521,7 @@ click-left = /usr/bin/firefox && workspace $ws2 &
 
 # icones 
 #  calc
-#  folder
-#  wifi
 #  som
-#  joystik
 #  brilho
 
 
