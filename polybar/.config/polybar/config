@@ -180,11 +180,11 @@ label-urgent-padding = 1
 type = internal/xwindow
 
 format-prefix = "  "
-format-prefix-foreground = ${cores.color2}
+format-prefix-foreground = ${cores.color0}
 
 format = <label>
 format-background = ${cores.transparente}
-format-foreground =  ${cores.color2}
+format-foreground =  ${cores.color0}
 format-padding = 4
 
 label = %title%
