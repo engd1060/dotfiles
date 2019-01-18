@@ -508,6 +508,9 @@ content-foreground = ${cores.vermelho}
 content-underline = ${cores.transparente}
 click-left = ~/.local/bin/screencast.sh &
 
+# Firefox
+[module/apps]
+
 # Menu Power
 [module/menu-power]
 type = custom/text
