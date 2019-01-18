@@ -121,7 +121,7 @@ font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=9;1"
 font-4 = "Font Awesome 5 Brands:pixelsize=9;1"
 
 modules-left = menu-power lock exit placadevideo memoria temperatura-cpu cpu 
-modules-center = git-cron screenshot screencast
+modules-center = git-cron screenshot screencast firefox
 modules-right = ethernet wireless backlight volume
 
 cursor-click = pointer
