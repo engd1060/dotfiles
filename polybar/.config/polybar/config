@@ -523,6 +523,7 @@ click-left = /usr/bin/firefox && workspace $ws2 &
 #  folder
 #  wifi
 #  som
+#  joystik
 
 
 # Menu Power
