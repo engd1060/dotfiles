@@ -125,7 +125,7 @@ font-5 = "Ionicons:size=11;1"
 font-6 = "Material Icons:size=10;1"
 
 modules-left = menu-power lock exit placadevideo memoria temperatura-cpu cpu 
-modules-center = git-cron screenshot screencast firefox
+modules-center = git-cron screenshot screencast firefox steam
 modules-right = ethernet wireless volume
 
 cursor-click = pointer
@@ -486,10 +486,10 @@ content-underline = ${cores.transparente}
 click-left = /usr/bin/firefox &
 
 # Steam
-[module/firefox]
+[module/steam]
 type = custom/text
 content = 
-content-foreground = ${cores.vermelho}
+content-foreground = ${cores.azul}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/steam &
 
