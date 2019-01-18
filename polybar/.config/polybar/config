@@ -496,7 +496,8 @@ click-left = /usr/bin/steam &
 # 0 A.D.
 [module/0ad]
 type = custom/text
-content = 
+label-active-font = 3
+content = 0
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/ad &
