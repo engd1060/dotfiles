@@ -514,7 +514,8 @@ type = custom/text
 content = 
 content-foreground = ${cores.vermelho}
 content-underline = ${cores.transparente}
-click-left = /usr/bin/firefox &
+click-left = /usr/bin/firefox && workspace $ws2 &
+
 
 # Menu Power
 [module/menu-power]
