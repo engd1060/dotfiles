@@ -239,9 +239,9 @@ format = <label>
 label = RX480 %temperature-c%
 format-foreground = ${cores.azul}
 
-warn-temperature = 65
+warn-temperature = 5
 format-warn = <label-warn>
-label-warn = RX480 %temperature-c%
+label-warn = RX480  %temperature-c%
 label-warn-foreground = #f00
 
 # Kernel
