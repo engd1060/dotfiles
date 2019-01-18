@@ -521,7 +521,7 @@ click-left = /usr/bin/firefox && workspace $ws2 &
 # icones 
 #  calc
 #  folder
-#  relógio
+# 
 
 
 # Menu Power
