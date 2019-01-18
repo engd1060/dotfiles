@@ -442,12 +442,12 @@ ramp-7-foreground = ff0000
 ;   <ramp>
 format-warn = <label-warn>
 warn-temperature = 50
-label-warn = Ryzen  %temperature-c%
+label-warn =  Ryzen  %temperature-c%
 label-warn-foreground = #f00
 
 
 
-# Wireless  ●○◯⬤◯⬤
+# Wireless  ●○◯⬤◯⬤
 [module/wireless]
 type = internal/network
 interface = wlp36s0
@@ -519,7 +519,7 @@ content-underline = ${cores.transparente}
 click-left = /usr/bin/firefox && workspace $ws2 &
 
 
-# icones 
+# icones 
 #  calc
 #  som
 #  brilho
