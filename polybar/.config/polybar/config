@@ -325,7 +325,7 @@ enable-scroll = true
 ;   <label> (default)
 ;   <ramp>
 ;   <bar>
-format = <ramp>
+format = <ramp> <bar>
 
 ; Available tokens:
 ;   %percentage% (default)
