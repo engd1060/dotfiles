@@ -303,7 +303,7 @@ ramp-coreload-7-foreground = #8A0829
 type = internal/memory
 format = <label>
 
-format-prefix = " RAM "
+format-prefix = " "
 format-prefix-foreground = #B4a1c9
 
 label = %mb_used% 
@@ -416,7 +416,7 @@ units = true
 ;   <ramp>
 format = <label> 
 
-label = yzen %temperature-c%
+label =  %temperature-c%
 label-foreground = #FF8000
 
 # ramp vai de 0 até warn-temperature
@@ -442,7 +442,7 @@ ramp-7-foreground = ff0000
 ;   <ramp>
 format-warn = <label-warn>
 warn-temperature = 50
-label-warn =  Ryzen  %temperature-c%
+label-warn =   %temperature-c%
 label-warn-foreground = #f00
 
 
