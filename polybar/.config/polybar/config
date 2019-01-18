@@ -359,7 +359,7 @@ format-volume = <label-volume> <bar-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${cores.fontes}
 
-label-muted =  MUTE ───────
+label-muted =  ───────
 label-muted-foreground = ${cores.icones-modulos}
 
 bar-volume-gradient = true
@@ -522,6 +522,7 @@ click-left = /usr/bin/firefox && workspace $ws2 &
 #  calc
 #  folder
 #  wifi
+#  som
 
 
 # Menu Power
