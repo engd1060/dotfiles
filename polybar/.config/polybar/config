@@ -354,12 +354,12 @@ use-ui-max = false
 format-volume-prefix = " "
 format-volume-prefix-foreground = ${cores.icones-modulos}
 
-format-volume = <label-volume> <bar-volume>
+#format-volume = <label-volume> <bar-volume>
+format-volume = <bar-volume>
+label-volume = %percentage%%
+label-volume-foreground = ${cores.fontes}
 
-;label-volume = %percentage%%
-;label-volume-foreground = ${cores.fontes}
-
-label-muted =  ───────
+label-muted =   ───────
 label-muted-foreground = ${cores.icones-modulos}
 
 bar-volume-gradient = true
