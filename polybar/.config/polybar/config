@@ -166,7 +166,7 @@ label-focused-underline = ${cores.color1}
 label-focused-padding = 1
 
 label-unfocused = %icon%
-label-unfocused-foreground = ${cores.color5}
+label-unfocused-foreground = ${cores.color4}
 label-unfocused-underline = ${cores.transparente}
 label-unfocused-padding = 1
 
@@ -180,11 +180,11 @@ label-urgent-padding = 1
 type = internal/xwindow
 
 format-prefix = "  "
-format-prefix-foreground = ${cores.color0}
+format-prefix-foreground = ${cores.color4}
 
 format = <label>
 format-background = ${cores.transparente}
-format-foreground =  ${cores.color0}
+format-foreground =  ${cores.color4}
 format-padding = 4
 
 label = %title%
