@@ -481,7 +481,7 @@ click-left = ~/.local/bin/screencast.sh &
 [module/firefox]
 type = custom/text
 content = 
-content-foreground = ${cores.vermelho}
+content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/firefox &
 
@@ -489,7 +489,7 @@ click-left = /usr/bin/firefox &
 [module/steam]
 type = custom/text
 content = 
-content-foreground = ${cores.azul}
+content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/steam &
 
