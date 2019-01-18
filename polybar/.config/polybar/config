@@ -81,7 +81,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=9;1"
 font-5 = "Ionicons:size=11;1"
 font-6 = "Material Icons:size=10;1"
 
-modules-left =  usuario kernel spotify janela
+modules-left =  usuario kernel spotify #janela
 modules-center =  i3
 modules-right = root storage data hora
 
@@ -496,7 +496,6 @@ click-left = /usr/bin/steam &
 # 0 A.D.
 [module/0ad]
 type = custom/text
-active-font = 3
 content = 0
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
