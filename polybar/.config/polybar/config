@@ -224,7 +224,7 @@ label-mounted-foreground = ${cores.roxoclaro}
 type = custom/script
 interval = 5
 
-format-prefix = " "
+format-prefix = "$ "
 format-prefix-foreground = ${cores.azul}
 format-underline = ${cores.transparente}
 exec = echo $USER@$HOSTNAME
@@ -416,7 +416,7 @@ units = true
 ;   <ramp>
 format = <label> 
 
-label =  Ryzen %temperature-c%
+label = Ryzen %temperature-c%
 label-foreground = #FF8000
 
 # ramp vai de 0 até warn-temperature
@@ -525,6 +525,7 @@ click-left = /usr/bin/firefox && workspace $ws2 &
 #  wifi
 #  som
 #  joystik
+#  brilho
 
 
 # Menu Power
