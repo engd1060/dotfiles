@@ -117,7 +117,7 @@ module-margin-right = 1
 
 font-0 = xos4 Terminus:size=12;0
 font-1 = OpenSans:size=10;0
-font-2 = Ionicons:size=11;0
+font-2 = Ionicons:size=11;1
 font-3 = Font Awesome 5 Free:style=Regular:pixelsize=9;1
 font-4 = Font Awesome 5 Free:style=Solid:pixelsize=9;1
 font-5 = Font Awesome 5 Brands:pixelsize=9;1
@@ -442,7 +442,7 @@ ramp-7-foreground = ff0000
 ;   <ramp>
 format-warn = <label-warn>
 warn-temperature = 50
-label-warn =  Ryzen  %temperature-c%
+label-warn =  Ryzen  %temperature-c%
 label-warn-foreground = #f00
 
 
