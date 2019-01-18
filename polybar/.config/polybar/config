@@ -166,7 +166,7 @@ label-focused-underline = ${cores.color1}
 label-focused-padding = 1
 
 label-unfocused = %icon%
-label-unfocused-foreground = ${cores.color2}
+label-unfocused-foreground = ${cores.color5}
 label-unfocused-underline = ${cores.transparente}
 label-unfocused-padding = 1
 
