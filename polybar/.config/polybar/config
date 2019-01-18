@@ -249,7 +249,7 @@ label-warn-foreground = #f00
 type = custom/script
 interval = 10
 
-format-prefix = ""
+format-prefix = " "
 format-prefix-foreground = ${cores.icones-modulos}
 exec = uname -r
 tail = false
@@ -415,7 +415,7 @@ units = true
 ;   <ramp>
 format = <label> 
 
-label =  Ryzen %temperature-c%
+label =  Ryzen %temperature-c%
 label-foreground = #FF8000
 
 # ramp vai de 0 até warn-temperature
