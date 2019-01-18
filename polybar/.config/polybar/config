@@ -184,7 +184,7 @@ format-prefix-foreground = ${cores.icones-modulos}
 
 format = <label>
 format-background = ${cores.transparente}
-format-foreground = ${cores.fontes}
+format-foreground =  ${cores.color2}
 format-padding = 4
 
 label = %title%
