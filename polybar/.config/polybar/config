@@ -242,7 +242,7 @@ format-foreground = ${cores.azul}
 
 warn-temperature = 65
 format-warn = <label-warn>
-label-warn = RX480  %temperature-c%
+label-warn = RX480  %temperature-c%
 label-warn-foreground = #f00
 
 # Kernel
@@ -403,7 +403,7 @@ format-foreground = ${cores.rosa}
 label = %time%
 label-foreground = ${cores.fontes}
 
-# temperatura
+# temperatura do cpu
 [module/temperatura-cpu]
 type = internal/temperature
 interval = 1.0
@@ -416,7 +416,7 @@ units = true
 ;   <ramp>
 format = <label> 
 
-label = Ryzen %temperature-c%
+label = yzen %temperature-c%
 label-foreground = #FF8000
 
 # ramp vai de 0 até warn-temperature
