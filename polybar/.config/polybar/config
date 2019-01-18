@@ -485,6 +485,13 @@ content-foreground = ${cores.vermelho}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/firefox &
 
+# Steam
+[module/firefox]
+type = custom/text
+content = 
+content-foreground = ${cores.vermelho}
+content-underline = ${cores.transparente}
+click-left = /usr/bin/steam &
 
 # icones 
 #  calc
