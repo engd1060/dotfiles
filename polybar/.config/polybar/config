@@ -249,7 +249,7 @@ label-warn-foreground = #f00
 type = custom/script
 interval = 10
 
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = ${cores.icones-modulos}
 exec = uname -r
 tail = false
