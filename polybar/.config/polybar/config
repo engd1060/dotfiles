@@ -79,7 +79,7 @@ font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=9;1"
 font-4 = "Font Awesome 5 Brands:pixelsize=9;1"
 
-modules-left = git-cron screenshot screencast usuario spotify janela
+modules-left =  usuario kernel spotify janela
 modules-center =  i3
 modules-right = root storage data hora
 
@@ -120,8 +120,8 @@ font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=9;1"
 font-4 = "Font Awesome 5 Brands:pixelsize=9;1"
 
-modules-left = menu-power lock exit placadevideo memoria temperatura-cpu cpu kernel
-modules-center = 
+modules-left = menu-power lock exit placadevideo memoria temperatura-cpu cpu 
+modules-center = git-cron screenshot screencast
 modules-right = ethernet wireless backlight volume
 
 cursor-click = pointer
