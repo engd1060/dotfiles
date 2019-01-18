@@ -117,10 +117,10 @@ module-margin-right = 1
 
 font-0 = "xos4 Terminus:size=12;0"
 font-1 = "OpenSans:size=10;0"
-font-2 = "Ionicons:size=11;1"
-font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=9;1"
-font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=9;1"
-font-5 = "Font Awesome 5 Brands:pixelsize=9;1"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;1"
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=9;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=9;1"
+font-5 = "Ionicons:size=11;1"
 
 modules-left = menu-power lock exit placadevideo memoria temperatura-cpu cpu 
 modules-center = git-cron screenshot screencast firefox
@@ -224,7 +224,7 @@ label-mounted-foreground = ${cores.roxoclaro}
 type = custom/script
 interval = 5
 
-format-prefix = "$ "
+format-prefix = " "
 format-prefix-foreground = ${cores.azul}
 format-underline = ${cores.transparente}
 exec = echo $USER@$HOSTNAME
