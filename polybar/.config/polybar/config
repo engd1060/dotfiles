@@ -125,7 +125,7 @@ font-5 = "Ionicons:size=11;1"
 font-6 = "Material Icons:size=10;1"
 
 modules-left = menu-power lock exit placadevideo memoria temperatura-cpu cpu 
-modules-center = git-cron screenshot screencast firefox steam 0ad
+modules-center = git-cron screenshot screencast firefox telegram steam 0ad
 modules-right = ethernet wireless volume
 
 cursor-click = pointer
@@ -485,6 +485,14 @@ content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/firefox &
 
+# Telegram
+[module/telegram]
+type = custom/text
+content = 
+content-foreground = ${cores.branco}
+content-underline = ${cores.transparente}
+click-left = /usr/bin/telegram-desktop &
+
 # Steam
 [module/steam]
 type = custom/text
@@ -501,7 +509,7 @@ content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/ad &
 
-# icones 
+# icones 
 #  calc
 #  som
 #  brilho
