@@ -491,7 +491,7 @@ type = custom/text
 content = 
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
-click-left = /usr/bin/telegram-desktop &
+click-left = /usr/bin/telegram-desktop && $ws3
 
 # Steam
 [module/steam]
