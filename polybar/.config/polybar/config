@@ -507,7 +507,7 @@ type = custom/text
 content = 0
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
-click-left = /usr/bin/ad &
+click-left = /usr/bin/0ad &
 
 # icones 
 #  calc
