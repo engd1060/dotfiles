@@ -21,14 +21,11 @@ set $ws9 "9: games"
 
 # Application shortcuts
 bindsym $mod+Return exec --no-startup-id termite &
-
 bindsym $mod+T exec --no-startup-id telegram-desktop &
-#bindsym $mod+F exec --no-startup-id firefox &
-
 
 
 # Screenshot & Screencast
-bindsym F12 exec --no-startup-id $HOME/.local/bin/screenshot.sh
+bindsym Print exec --no-startup-id $HOME/.local/bin/screenshot.sh
 #bindsym --release $mod+K exec --no-startup-id $HOME/.local/bin/screencast.sh
 
 # Audio/Brightness Control
