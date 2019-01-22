@@ -4,7 +4,7 @@ set $mod Mod4
 set $alt Mod1
 set $ctrl Control
 
-font pango:xos4 Terminus 8
+font pango:monospace 8
 floating_modifier $mod
 
 set $ws1 "1: terminal"
