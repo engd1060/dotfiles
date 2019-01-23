@@ -227,7 +227,7 @@ label-mounted-foreground = ${cores.roxoclaro}
 type = custom/script
 interval = 5
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${cores.azul}
 format-underline = ${cores.transparente}
 exec = echo $USER@$HOSTNAME
