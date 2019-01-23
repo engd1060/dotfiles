@@ -21,7 +21,7 @@ set $ws9 "9: games"
 
 # Application shortcuts
 bindsym $mod+Return exec --no-startup-id termite &
-bindsym $mod+T exec --no-startup-id telegram-desktop &
+#bindsym $mod+T exec --no-startup-id telegram-desktop &
 
 
 # Screenshot & Screencast
@@ -64,8 +64,9 @@ bindsym $mod+Shift+space floating toggle
 bindsym $ctrl+space floating toggle
 
 # Change container layout ('default', 'stacked', 'stacking', 'tabbed', 'splitv', 'splith', 'toggle')
-bindsym $mod+Shift+a layout tabbed
+bindsym $mod+t layout tabbed
 bindsym $mod+Shift+t layout toggle
+
 
 
 
