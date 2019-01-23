@@ -201,7 +201,7 @@ mount-0 = /
 interval = 30
 fixed-values = true
 
-format-mounted-prefix = "root "
+format-mounted-prefix = " "
 format-mounted-prefix-foreground = ${cores.verdeclaro}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
@@ -215,7 +215,7 @@ mount-0 = /home
 interval = 30
 fixed-values = true
 
-format-mounted-prefix = " "
+format-mounted-prefix = " "
 format-mounted-prefix-foreground = ${cores.roxoclaro}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
@@ -510,7 +510,7 @@ content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/0ad &
 
-# icones 
+#           
 #  calc
 #  som
 #  brilho
