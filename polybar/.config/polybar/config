@@ -201,11 +201,11 @@ mount-0 = /
 interval = 10
 fixed-values = true
 
-format-mounted-prefix = " "
+format-mounted-prefix = "/ "
 format-mounted-prefix-foreground = ${cores.verde}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
-label-mounted = %mountpoint%: %percentage_used%% de %total%
+label-mounted = %percentage_used%%
 label-mounted-foreground = ${cores.verdeclaro}
 
 # Discos/Storage
@@ -219,7 +219,7 @@ format-mounted-prefix = " "
 format-mounted-prefix-foreground = ${cores.roxo}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
-label-mounted = %percentage_used%% ;de %total%
+label-mounted = %percentage_used%%
 label-mounted-foreground = ${cores.roxoclaro}
 
 # Usuário
