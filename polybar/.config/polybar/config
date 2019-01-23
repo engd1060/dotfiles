@@ -201,8 +201,8 @@ mount-0 = /
 interval = 10
 fixed-values = true
 
-format-mounted-prefix = "/ "
-format-mounted-prefix-foreground = ${cores.verde}
+format-mounted-prefix = "root "
+format-mounted-prefix-foreground = ${cores.verdeclaro}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
 label-mounted = %percentage_used%%
@@ -216,7 +216,7 @@ interval = 10
 fixed-values = true
 
 format-mounted-prefix = " "
-format-mounted-prefix-foreground = ${cores.roxo}
+format-mounted-prefix-foreground = ${cores.roxoclaro}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
 label-mounted = %percentage_used%%
