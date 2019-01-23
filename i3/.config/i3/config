@@ -90,7 +90,14 @@ bindsym $mod+Shift+r restart
 # Gaps
 gaps inner 10
 gaps outer 10
-hide_edge_borders smart
+
+#hide_edge_borders smart
+
+#smart_borders anable
+new_window none
+
+#bindsym $mod+T exec --no-startup-id telegram-desktop &
+
 
 mode "resize" {
         bindsym j resize shrink width 5 px or 5 ppt
