@@ -138,7 +138,7 @@ for_window [class="Steam"] move to workspace $ws9
 # Startup
 exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
+exec --no-startup-id compton
 #                                                         Borda                                                            
 # class                 border  backgr. text    indicator child_border
 client.focused          #4c7899 #285577 #ffffff #2e9efc   #557766
