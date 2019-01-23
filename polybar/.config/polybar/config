@@ -198,7 +198,7 @@ label-empty-foreground = ${cores.fontes}
 [module/root]
 type = internal/fs
 mount-0 = /
-interval = 10
+interval = 30
 fixed-values = true
 
 format-mounted-prefix = "root "
@@ -212,7 +212,7 @@ label-mounted-foreground = ${cores.verdeclaro}
 [module/storage]
 type = internal/fs
 mount-0 = /home
-interval = 10
+interval = 30
 fixed-values = true
 
 format-mounted-prefix = " "
