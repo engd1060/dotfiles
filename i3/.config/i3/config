@@ -5,8 +5,10 @@ set $alt Mod1
 set $ctrl Control
 
 font pango:monospace 8
+
 floating_modifier $mod
 
+# foco segui o mouse?
 focus_follows_mouse no
 
 set $ws1 "1: terminal"
