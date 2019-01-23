@@ -63,9 +63,10 @@ bindsym $alt+Return fullscreen toggle
 bindsym $mod+Shift+space floating toggle
 bindsym $ctrl+space floating toggle
 
-# Change container layout (stacked, tabbe, toggle split)
+# Change container layout ('default', 'stacked', 'stacking', 'tabbed', 'splitv', 'splith', 'toggle')
 bindsym $mod+s layout stacking
 bindsym $mod+Shift+s layout tabbed
+bindsym $mod+Shift+t layout toggle
 
 
 
