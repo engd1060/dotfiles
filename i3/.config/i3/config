@@ -65,7 +65,9 @@ bindsym $ctrl+space floating toggle
 
 # Change container layout (stacked, tabbe, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+Shift+s layout tabbleind
+bindsym $mod+Shift+s layout tabbed
+
+
 
 # Workspaces
 bindsym $mod+1 workspace $ws1
