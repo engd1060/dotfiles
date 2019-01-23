@@ -93,8 +93,10 @@ gaps outer 10
 
 #hide_edge_borders smart
 
-#smart_borders anable
+
+#smart_borders enable
 new_window none
+for_window [class="^.*"] border pixel 1
 
 #bindsym $mod+T exec --no-startup-id telegram-desktop &
 
