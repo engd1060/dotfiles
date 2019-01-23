@@ -137,7 +137,7 @@ exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
-client.focused          ${xrdb:color2} ${xrdb:color2} ${xrdb:color2} ${xrdb:color2}
+client.focused          ${xrdb:color1} ${xrdb:color2} ${xrdb:color2} ${xrdb:color2}
 client.focused_inactive #222222 #5F676A #FFFFFF #5F676A #5F676A
 client.unfocused        #333333 #222222 #888888 #222222 #333333
 client.urgent           #222222 #900000 #FFFFFF #900000 #222222
