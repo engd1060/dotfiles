@@ -137,11 +137,11 @@ exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
-client.focused          #E57860     #E57860     #FFFFFF     #E57860     #E57860
-client.focused_inactive #222222    #5F676A    #FFFFFF    #5F676A    #5F676A
-client.unfocused        #333333   #222222   #888888   #222222   #333333
-client.urgent           #222222      #900000      #FFFFFF      #900000      #222222
+client.focused          #E57860 #E57860 #FFFFFF #E57860 #E57860
+client.focused_inactive #222222 #5F676A #FFFFFF #5F676A #5F676A
+client.unfocused        #333333 #222222 #888888 #222222 #333333
+client.urgent           #222222 #900000 #FFFFFF #900000 #222222
 client.placeholder      #000000 #0C0C0C #FFFFFF #0C0C0C #000000
 
-client.background       #000000
+client.background       #22000000
 
