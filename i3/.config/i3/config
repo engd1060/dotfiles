@@ -6,6 +6,7 @@ set $ctrl Control
 
 font pango:monospace 8
 
+# $mod para clicar e mover as janelas flutantes
 floating_modifier $mod
 
 # foco segui o mouse?
