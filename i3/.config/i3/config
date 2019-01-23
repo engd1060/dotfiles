@@ -21,7 +21,7 @@ set $ws9 "9: games"
 
 # Application shortcuts
 bindsym $mod+Return exec --no-startup-id termite &
-#bindsym $mod+T exec --no-startup-id telegram-desktop &
+
 
 
 # Screenshot & Screencast
@@ -67,8 +67,8 @@ bindsym $ctrl+space floating toggle
 bindsym $mod+t layout tabbed
 bindsym $mod+Shift+t layout toggle
 
-
-
+# Chang focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
 
 # Workspaces
 bindsym $mod+1 workspace $ws1
