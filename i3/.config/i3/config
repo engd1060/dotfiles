@@ -96,7 +96,7 @@ gaps outer 15
 
 #smart_borders enable
 new_window none
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 3
 
 #bindsym $mod+T exec --no-startup-id telegram-desktop &
 
@@ -137,7 +137,7 @@ exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
-client.focused          #00FF00 ${xrdb:color0} ${xrdb:color0}
+client.focused          ${xrdb:color0} ${xrdb:color1} ${xrdb:color2}
 client.focused_inactive #222222 #5F676A #FFFFFF #5F676A #5F676A
 client.unfocused        #333333 #222222 #888888 #222222 #333333
 client.urgent           #222222 #900000 #FFFFFF #900000 #222222
