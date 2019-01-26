@@ -21,6 +21,6 @@
 
 # --brightness 0.95 (define o brilho em 95%)
 # --rate 144 (define o fresh rate em 144Hz)
-# --output DisplayPort-2 (define a saída)
+# --output DisplayPort-0 (define a saída)
 
-xrandr --output DisplayPort-2 --brightness 0.95 --rate 144
+xrandr --output DisplayPort-0 --brightness 0.95 --rate 144
