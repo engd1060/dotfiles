@@ -510,10 +510,8 @@ content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/0ad &
 
-#           
-#  calc
-#  som
-#  brilho
+#              
+
 
 
 # Menu Power
