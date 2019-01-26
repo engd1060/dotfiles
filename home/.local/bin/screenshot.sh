@@ -70,6 +70,6 @@ if [ ! -z $arquivo ]; then
 	xclip -selection c -t $tipo -i $dir$arquivo
 fi
 
-notify-send -i $titulo "Captura de tela realizada" "$msg"
+notify-send -t 1300 -i $titulo "Captura de tela realizada" "$msg"
 canberra-gtk-play --file=$HOME/.local/share/sounds/screenshot.wav
 exit 0
