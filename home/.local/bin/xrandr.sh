@@ -23,4 +23,4 @@
 # --rate 144 (define o fresh rate em 144Hz)
 # --output DisplayPort-0 (define a saída)
 
-xrandr --output DisplayPort-0 --brightness 0.95 --rate 144
+xrandr --output DisplayPort-0 --brightness 0.95 && xrandr --rate 144
