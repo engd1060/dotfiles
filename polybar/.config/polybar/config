@@ -309,7 +309,7 @@ format = <label>
 format-prefix = " "
 format-prefix-foreground = #F7819F
 
-label = %mb_used% 
+label = %percentage_used%%
 label-foreground = #F7819F
 
 
