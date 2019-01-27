@@ -152,4 +152,4 @@ client.background       #ffffff
 exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id $HOME/.local/bin/xrandr.sh
-exec --no-startup-id compton
+exec_always --no-startup-id $HOME/.local/bin/compton.sh
