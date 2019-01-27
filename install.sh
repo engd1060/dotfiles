@@ -22,4 +22,3 @@ stows
 
 # Reiniciar i3
 i3-msg restart
-wal -i $HOME/.local/share/wallpapers/wallpaper.jpg
