@@ -71,5 +71,5 @@ if [ ! -z $arquivo ]; then
 fi
 
 dunstify -t 1300 -i $titulo "Captura de tela realizada" "$msg"
-canberra-gtk-play --file=$HOME/.local/share/sounds/screenshot.wav
+#canberra-gtk-play --file=$HOME/.local/share/sounds/screenshot.wav
 exit 0
