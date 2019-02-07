@@ -443,7 +443,7 @@ ramp-signal-foreground = ${cores.fontes}
 # Ethernet
 [module/ethernet]
 type = internal/network
-interface = enp4s0
+interface = enp37s0
 interval = 1.0
 
 format-connected = <label-connected> <ramp-signal>
