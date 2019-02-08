@@ -91,8 +91,8 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+r restart
 
 # Gaps
-gaps inner 20
-gaps outer 15
+gaps inner 15
+gaps outer 10
 
 #hide_edge_borders smart
 
