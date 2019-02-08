@@ -31,6 +31,12 @@ set $down k
 set $left j
 set $right semicolon
 
+# Definindo as teclas modificadores
+set $mod Mod4
+set $alt Mod1
+set $ctrl Control
+
+
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 
