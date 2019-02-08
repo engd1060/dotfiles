@@ -21,9 +21,9 @@ set $ws6 "6: work"
 set $ws7 "7: pc"
 set $ws8 "8: art"
 set $ws9 "9: games"
-set $ws10 "10:  video"
-set $ws11 "11:  teste"
-set $ws12 "12:  teste2"
+set $wsv "v:  video"
+#set $ws11 "11:  teste"
+#set $ws12 "12:  teste2"
 
 
 
@@ -101,7 +101,7 @@ mode $mode_workspace {
     bindsym 7 workspace 7; mode "default"
     bindsym 8 workspace 8; mode "default"
     bindsym 9 workspace 9; mode "default"
-    bindsym 10 workspace 10; mode "default"
+    bindsym v workspace v; mode "default"
     bindsym 11 workspace 11; mode "default"
     bindsym 12 workspace 12; mode "default"
     # […]
