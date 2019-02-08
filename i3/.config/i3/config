@@ -10,7 +10,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # foco segui o mouse?
-focus_follows_mouse no
+focus_follows_mouse yes
 
 set $ws1 "1: terminal"
 set $ws2 "2: browser"
