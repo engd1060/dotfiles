@@ -22,6 +22,10 @@ set $ws7 "7: pc"
 set $ws8 "8: art"
 set $ws9 "9: games"
 set $ws10 "10:  video"
+set $ws11 "11:  teste"
+set $ws12 "12:  teste2"
+
+
 
 # Application shortcuts
 bindsym $mod+Return exec --no-startup-id termite &
@@ -74,16 +78,58 @@ bindsym $mod+Shift+t layout toggle
 # Chang focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# Workspaces
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
+## Workspaces
+#bindsym $mod+1 workspace $ws1
+#bindsym $mod+2 workspace $ws2
+#bindsym $mod+3 workspace $ws3
+#bindsym $mod+4 workspace $ws4
+#bindsym $mod+5 workspace $ws5
+#bindsym $mod+6 workspace $ws6
+#bindsym $mod+7 workspace $ws7
+#bindsym $mod+8 workspace $ws8
+#bindsym $mod+9 workspace $ws9
+
+# testando mais de 10 WS
+set $mode_workspace "goto_ws"
+mode $mode_workspace {
+    bindsym 1 workspace 1; mode "default"
+    bindsym 2 workspace 2; mode "default"
+    bindsym 3 workspace 3; mode "default"
+    bindsym 4 workspace 4; mode "default"
+    bindsym 5 workspace 5; mode "default"
+    bindsym 6 workspace 6; mode "default"
+    bindsym 7 workspace 7; mode "default"
+    bindsym 8 workspace 8; mode "default"
+    bindsym 9 workspace 9; mode "default"
+    bindsym 10 workspace 10; mode "default"
+    bindsym 11 workspace 11; mode "default"
+    bindsym 12 workspace 12; mode "default"
+    # […]
+    bindsym Escape mode "default"
+}
+bindsym $mod+w mode $mode_workspace
+
+set $mode_move_to_workspace "moveto_ws"
+mode $mode_move_to_workspace {
+    bindsym 1 move container to workspace 1; mode "default"
+    bindsym 2 move container to workspace 2; mode "default"
+    bindsym 3 move container to workspace 3; mode "default"
+    bindsym 4 move container to workspace 4; mode "default"
+    bindsym 5 move container to workspace 5; mode "default"
+    bindsym 6 move container to workspace 6; mode "default"
+    bindsym 7 move container to workspace 7; mode "default"
+    bindsym 8 move container to workspace 8; mode "default"
+    bindsym 9 move container to workspace 9; mode "default"
+    bindsym 10 move container to workspace 10; mode "default"
+    bindsym 11 move container to workspace 11; mode "default"
+    bindsym 12 move container to workspace 12; mode "default"
+    #[…]
+    bindsym Escape mode "default"
+}
+bindsym $mod+shift+w mode $mode_move_to_workspace
+
+
+
 
 # Next workspaces
 bindsym $mod+Tab workspace next

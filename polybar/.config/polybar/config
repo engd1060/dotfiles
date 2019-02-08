@@ -155,6 +155,8 @@ ws-icon-6 = 7; pc
 ws-icon-7 = 8; art
 ws-icon-8 = 9; games
 ws-icon-9 = 10;  video
+ws-icon-10 = 11;  teste
+ws-icon-11 = 12;  teste2
 
 format = <label-state> <label-mode>
 
