@@ -238,7 +238,7 @@ format-foreground = ${cores.azul}
 [module/placadevideo]
 type = internal/temperature
 interval = 1
-hwmon-path = /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/hwmon/hwmon2/temp1_input
+hwmon-path = /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/hwmon/hwmon3/temp1_input
 
 format = <label>
 label = RX480 %temperature-c%
