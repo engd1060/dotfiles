@@ -118,9 +118,9 @@ module-margin-left = 1
 module-margin-right = 1
 
 font-0 = Monaco for Powerline:size=10;2
-font-1 = "OpenSans:size=10;0"
-font-2 = Anonymice Nerd:style=Regular:size=10;0
-#font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=12;1"
+#font-1 = "OpenSans:size=10;0"
+font-1 = Anonymice Nerd Font:style=Regular:size=10
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=12;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=12;1"
 font-4 = "Font Awesome 5 Brands:pixelsize=12;1"
 font-5 = "Ionicons:size=12;1"
