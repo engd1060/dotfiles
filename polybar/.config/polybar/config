@@ -417,7 +417,7 @@ label-warn-foreground = #f00
 
 
 
-# Wireless  ●○◯⬤◯⬤
+# Wireless
 [module/wireless]
 type = internal/network
 interface = wlp36s0
@@ -425,7 +425,7 @@ interval = 1.0
 
 format-connected = <label-connected> <ramp-signal>
 format-packetloss = <animation-packetloss>
-label-connected =  %upspeed%   %downspeed% %essid%
+label-connected = %upspeed% %downspeed% 直%essid%
 label-connected-foreground = ${cores.fontes}
 
 ramp-signal-0 = ○○○○○
@@ -450,10 +450,10 @@ interval = 1.0
 
 format-connected = <label-connected> <ramp-signal>
 format-packetloss = <animation-packetloss>
-label-connected =  %upspeed%  %downspeed%  %local_ip%
+label-connected =  %upspeed%  %downspeed%   %local_ip%
 label-connected-foreground = ${cores.fontes}
 
-ramp-signal-0 = 
+ramp-signal-0 = 
 ramp-signal-0-foreground = ${cores.icones-modulos}
 
 #=========================================================================#
