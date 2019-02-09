@@ -308,7 +308,7 @@ ramp-coreload-7-foreground = #8A0829
 type = internal/memory
 format = <label>
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = #F7819F
 
 label = %percentage_used%%
