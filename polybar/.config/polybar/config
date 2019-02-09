@@ -456,6 +456,7 @@ label-connected-foreground = ${cores.fontes}
 ramp-signal-0 = 
 ramp-signal-0-foreground = ${cores.icones-modulos}
 
+#========================================================================
 # indicador do teclado
 [module/keyboard]
 type = internal/xkeyboard
@@ -475,7 +476,7 @@ format-spacing = 0
 #   %name%
 #   %number%
 # Default: %layout%
-label-layout = %name%
+label-layout = %name% %number%
 label-layout-padding = 2
 label-layout-background = #bc99ed
 label-layout-foreground = #000
@@ -483,7 +484,7 @@ label-layout-foreground = #000
 ; Available tokens:
 ;   %name%
 ; Default: %name%
-label-indicator = %name%
+label-indicator = %layout% 
 label-indicator-padding = 2
 label-indicator-background = #8139e8
 
