@@ -150,7 +150,7 @@ ws-icon-3 = 4; studio
 ws-icon-4 = 5; codes
 ws-icon-5 = 6;龎office
 ws-icon-6 = 7; pc
-ws-icon-7 = 8; art
+ws-icon-7 = 8; art
 ws-icon-8 = 9; games
 ws-icon-9 = v; video
 #ws-icon-10 = 11;  teste
@@ -495,7 +495,7 @@ click-left = /usr/bin/firefox && $ws2 &
 # Telegram
 [module/telegram]
 type = custom/text
-content = 
+content = 
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = /usr/bin/telegram-desktop && $ws3 &
