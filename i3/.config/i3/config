@@ -103,8 +103,6 @@ mode $mode_workspace {
     bindsym 8 workspace 8; mode "default"
     bindsym 9 workspace 9; mode "default"
     bindsym v workspace v; mode "default"
-    #bindsym 11 workspace 11; mode "default"
-    #bindsym 12 workspace 12; mode "default"
     # […]
     bindsym Escape mode "default"
     bindsym w mode "default"
