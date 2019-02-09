@@ -163,9 +163,9 @@ label-mode-padding = 1
 label-mode-background = #e60053
 
 label-focused = %icon%
-label-focused-foreground = ${cores.color1}
-label-focused-background = ${cores.transparente}
-label-focused-underline = ${cores.color1}
+label-focused-foreground = ${cores.transparente}
+label-focused-background = ${cores.color1}
+label-focused-underline = ${cores.transparente}
 label-focused-padding = 1
 
 label-unfocused = %icon%
