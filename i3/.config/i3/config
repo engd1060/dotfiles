@@ -143,10 +143,10 @@ bindsym $mod+Shift+r restart
 gaps inner 15
 gaps outer 5
 
-#hide_edge_borders smart
+hide_edge_borders smart
 
 
-#smart_borders enable
+smart_borders enable
 new_window none
 for_window [class="^.*"] border pixel 1
 
