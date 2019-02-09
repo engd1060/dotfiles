@@ -484,7 +484,7 @@ label-layout-foreground = #000
 ; Available tokens:
 ;   %name%
 ; Default: %name%
-label-indicator = %name% 
+label-indicator = CapsLock 
 label-indicator-padding = 2
 label-indicator-background = #8139e8
 
