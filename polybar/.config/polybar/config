@@ -174,8 +174,8 @@ label-unfocused-underline = ${cores.transparente}
 label-unfocused-padding = 1
 
 label-urgent = %icon%
-label-urgent-foreground = ${cores.color0}
-label-urgent-background = ${cores.color1}
+label-urgent-foreground = ${cores.color2}
+label-urgent-background = ${cores.transparente}
 label-urgent-padding = 1
 
 # Janela
