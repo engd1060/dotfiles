@@ -486,6 +486,7 @@ label-layout-foreground = #000
 ; Default: %name%
 label-indicator = CapsLock 
 label-indicator-padding = 2
+label-indicator-foreground = ${cores.color1}
 label-indicator-background = ${cores.transparente}
 
 #=========================================================================#
