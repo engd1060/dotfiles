@@ -169,7 +169,7 @@ label-focused-underline = ${cores.color1}
 label-focused-padding = 1
 
 label-unfocused = %icon%
-label-unfocused-foreground = ${cores.color4}
+label-unfocused-foreground = ${cores.color1}
 label-unfocused-underline = ${cores.transparente}
 label-unfocused-padding = 1
 
@@ -457,7 +457,7 @@ ramp-signal-0 = 
 ramp-signal-0-foreground = ${cores.icones-modulos}
 
 #=========================================================================#
-#====================Ícones da Barra de App===============================#
+#====================Launch Icons=========================================#
 #=========================================================================#
 
 # Git-Cron
