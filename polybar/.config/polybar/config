@@ -456,6 +456,37 @@ label-connected-foreground = ${cores.fontes}
 ramp-signal-0 = 
 ramp-signal-0-foreground = ${cores.icones-modulos}
 
+# indicador do teclado
+[module/keyboard]
+type = internal/xkeyboard
+
+# List of indicators to ignore
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+# Available tags:
+#   <label-layout> (default)
+#   <label-indicator> (default)
+format = <label-layout> <label-indicator>
+format-spacing = 0
+
+# Available tokens:
+#   %layout%
+#   %name%
+#   %number%
+# Default: %layout%
+label-layout = %name%
+label-layout-padding = 2
+label-layout-background = #bc99ed
+label-layout-foreground = #000
+
+; Available tokens:
+;   %name%
+; Default: %name%
+label-indicator = %name%
+label-indicator-padding = 2
+label-indicator-background = #8139e8
+
 #=========================================================================#
 #====================Launch Icons=========================================#
 #=========================================================================#
