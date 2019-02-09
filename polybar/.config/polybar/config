@@ -490,7 +490,7 @@ type = custom/text
 content = 
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
-click-left = /usr/bin/firefox && $ws2 &
+click-left = /usr/bin/firefox && workspace 2 &
 
 # Telegram
 [module/telegram]
@@ -498,7 +498,7 @@ type = custom/text
 content = 
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
-click-left = /usr/bin/telegram-desktop && $ws3 &
+click-left = /usr/bin/telegram-desktop && workspace 3 &
 
 # Steam
 [module/steam]
@@ -506,7 +506,7 @@ type = custom/text
 content = 
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
-click-left = /usr/bin/steam && $ws9 &
+click-left = /usr/bin/steam && workspace 9 &
 
 # 0 A.D.
 [module/0ad]
@@ -514,7 +514,7 @@ type = custom/text
 content = 0
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
-click-left = /usr/bin/0ad && $ws9 &
+click-left = /usr/bin/0ad && workspace 9 &
 
 # Menu Power
 [module/menu-power]
