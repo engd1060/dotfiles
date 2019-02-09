@@ -471,7 +471,7 @@ click-left = ~/.local/bin/git-cron.sh -c &
 # Screenshot
 [module/screenshot]
 type = custom/text
-content = 
+content = 
 content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = ~/.local/bin/screenshot.sh &
