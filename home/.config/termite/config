@@ -11,10 +11,9 @@ clickable_url = true
 
 #font = xos4 Terminus 10
 #font = DejaVu Sans 10
-#font = Fira Code 10 
+font = Fira Code 10 
 #font = Inconsolata 11
 
-font = Anonymice Nerd Font 12
 
 
 #fullscreen = true
