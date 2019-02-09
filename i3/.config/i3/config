@@ -106,6 +106,7 @@ mode $mode_workspace {
     #bindsym 12 workspace 12; mode "default"
     # […]
     bindsym Escape mode "default"
+    bindsym w mode "default"
 }
 bindsym $mod+w mode $mode_workspace
 
@@ -125,6 +126,7 @@ mode $mode_move_to_workspace {
     #bindsym 12 move container to workspace 12; mode "default"
     #[…]
     bindsym Escape mode "default"
+    bindsym w mode "default"
 }
 bindsym $mod+shift+w mode $mode_move_to_workspace
 
