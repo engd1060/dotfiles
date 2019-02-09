@@ -386,7 +386,7 @@ units = true
 ;   <ramp>
 format = <label> 
 
-label =  %temperature-c%
+label =  %temperature% 
 label-foreground = #FF8000
 
 # ramp vai de 0 até warn-temperature
