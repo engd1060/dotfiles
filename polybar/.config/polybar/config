@@ -308,7 +308,7 @@ ramp-coreload-7-foreground = #8A0829
 type = internal/memory
 format = <label>
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = #F7819F
 
 label = %percentage_used%%
@@ -386,7 +386,7 @@ units = true
 ;   <ramp>
 format = <label> 
 
-label =  %temperature-c%
+label =  %temperature-c%
 label-foreground = #FF8000
 
 # ramp vai de 0 até warn-temperature
