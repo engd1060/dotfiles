@@ -183,11 +183,11 @@ label-urgent-padding = 1
 type = internal/xwindow
 
 format-prefix = "  "
-format-prefix-foreground = ${cores.color4}
+format-prefix-foreground = ${cores.color1}
 
 format = <label>
 format-background = ${cores.transparente}
-format-foreground =  ${cores.color4}
+format-foreground =  ${cores.color1}
 format-padding = 4
 
 label = %title%
@@ -204,11 +204,11 @@ interval = 30
 fixed-values = true
 
 format-mounted-prefix = " "
-format-mounted-prefix-foreground = ${cores.verdeclaro}
+format-mounted-prefix-foreground = ${cores.color1}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
 label-mounted = %percentage_used%%
-label-mounted-foreground = ${cores.verdeclaro}
+label-mounted-foreground = ${cores.color1}
 
 # Discos/Storage
 [module/storage]
@@ -218,11 +218,11 @@ interval = 30
 fixed-values = true
 
 format-mounted-prefix = " "
-format-mounted-prefix-foreground = ${cores.roxoclaro}
+format-mounted-prefix-foreground = ${cores.color1}
 format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
 label-mounted = %percentage_used%%
-label-mounted-foreground = ${cores.roxoclaro}
+label-mounted-foreground = ${cores.color1}
 
 # Usuário
 [module/usuario]
@@ -230,10 +230,10 @@ type = custom/script
 interval = 5
 
 format-prefix = " "
-format-prefix-foreground = ${cores.azul}
+format-prefix-foreground = ${cores.color1}
 format-underline = ${cores.transparente}
 exec = echo $USER@$HOSTNAME
-format-foreground = ${cores.azul}
+format-foreground = ${cores.color1}
 
 # Placa de vídeo (temperatura)
 [module/placadevideo]
