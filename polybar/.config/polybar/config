@@ -259,7 +259,7 @@ format-prefix = ""
 format-prefix-foreground = ${cores.icones-modulos}
 exec = uname -r
 tail = false
-format-foreground = ${cores.fontes}
+format-foreground = ${cores.color1}
 
 # Spotify
 [module/spotify]
@@ -267,7 +267,7 @@ interval = 1.5
 format-prefix = " "
 format-prefix-foreground = ${cores.spotify}
 format-padding = 1
-format-foreground = ${cores.fontes}
+format-foreground = ${cores.color1}
 format-underline = ${cores.transparente}
 type = custom/script
 exec = ~/.local/bin/spotify.sh "%artist% - %title% (%album%)"
@@ -287,7 +287,7 @@ label = %percentage%%
 label-foreground = #FF8000
 
 ramp-coreload-0 = ▁
-ramp-coreload-0-foreground = #F5A9BC
+ramp-coreload-0-foreground = ${cores.color2}
 ramp-coreload-1 = ▂
 ramp-coreload-1-foreground = #F7819F
 ramp-coreload-2 = ▃
