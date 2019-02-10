@@ -358,9 +358,9 @@ date-alt = %A, %d de %B de %G%
 time = %H:%M
 format =  <label>
 format-underline = ${cores.transparente}
-format-foreground = ${cores.amarelo}
+format-foreground = ${cores.color1}
 label = %date%
-label-foreground = ${cores.fontes}
+label-foreground = ${cores.color1}
 
 # Hora
 [module/hora]
@@ -369,9 +369,9 @@ interval = 1
 time = %R
 format =  <label>
 format-underline = ${cores.transparente}
-format-foreground = ${cores.rosa}
+format-foreground = ${cores.color1}
 label = %time%
-label-foreground = ${cores.fontes}
+label-foreground = ${cores.color1}
 
 # temperatura do cpu
 [module/temperatura-cpu]
