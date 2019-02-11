@@ -497,7 +497,7 @@ label-indicator-background = ${cores.transparente}
 [module/git-cron]
 type = custom/text
 content = 
-content-foreground = ${cores.cinza}
+content-foreground = ${cores.branco}
 content-underline = ${cores.transparente}
 click-left = ~/.local/bin/git-cron.sh -c &
 
