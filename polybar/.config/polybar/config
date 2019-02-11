@@ -326,13 +326,13 @@ format-volume = <ramp-volume> <bar-volume>
 ramp-volume-background = #fff
 ramp-volume-foreground = #000
 
-ramp-volume-prefix-0 = " "
-ramp-volume-prefix-1 = " "
-ramp-volume-prefix-2 = " "
-ramp-volume-prefix-3 = " "
-ramp-volume-prefix-4 = " "
-ramp-volume-prefix-5 = " "
-ramp-volume-prefix-6 = " "
+ramp-volume-0 = " "
+ramp-volume-1 = " "
+ramp-volume-2 = " "
+ramp-volume-3 = " "
+ramp-volume-4 = " "
+ramp-volume-5 = " "
+ramp-volume-6 = " "
 
 
 
