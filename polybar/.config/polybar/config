@@ -330,14 +330,14 @@ format-volume = <label-volume> <bar-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${cores.fontes}
 
-label-muted =   00% ───────
+label-muted =   00% 
 label-muted-foreground = ${cores.icones-modulos}
 
 bar-volume-gradient = true
 bar-volume-indicator = 
 bar-volume-indicator-foreground = ${cores.icones-modulos}
-bar-volume-fill = ─
-bar-volume-empty = ─
+bar-volume-fill = 
+bar-volume-empty = 
 bar-volume-empty-foreground = ${cores.cinzaescuro}
 bar-volume-width = 8
 bar-volume-foreground-0 = #D8CEF6
