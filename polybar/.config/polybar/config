@@ -323,9 +323,8 @@ use-ui-max = false
 
 format-volume = <ramp-volume> <bar-volume>
 
-ramp-volume-background = #fff
-ramp-volume-foreground = #000
-
+ramp-volume-background = ${cores.transparente}
+ramp-volume-foreground = ${cores.branco}
 ramp-volume-0 = " "
 ramp-volume-1 = " "
 ramp-volume-2 = " "
@@ -349,7 +348,7 @@ bar-volume-indicator-foreground = ${cores.branco}
 bar-volume-fill = ─
 bar-volume-empty = ─
 bar-volume-empty-foreground = ${cores.cinzaescuro}
-bar-volume-width = 10
+bar-volume-width = 8
 bar-volume-foreground-0 = #D8CEF6
 bar-volume-foreground-1 = #D0A9F5
 bar-volume-foreground-2 = #DA81F5
