@@ -322,16 +322,9 @@ interval = 5
 use-ui-max = false
 
 
-format-volume-prefix-0 = " "
-format-volume-prefix-foreground-0 = ${cores.branco}
-format-volume-prefix-1 = " "
-format-volume-prefix-foreground-1 = ${cores.branco}
-format-volume-prefix-2 = " "
-format-volume-prefix-foreground-2 = ${cores.branco}
-format-volume-prefix-3 = " "
-format-volume-prefix-foreground-3 = ${cores.branco}
-format-volume-prefix-4 = " "
-format-volume-prefix-foreground-4 = ${cores.branco}
+format-volume-prefix = " "
+format-volume-prefix-foreground = ${cores.branco}
+
 
 format-volume = <label-volume> <bar-volume>
 
