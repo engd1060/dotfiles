@@ -315,14 +315,14 @@ label = %percentage_used%%
 label-foreground = #F7819F
 
 
-# Volume   
+# Volume     ●
 [module/volume]
 type = internal/pulseaudio
 interval = 5
 use-ui-max = false
 
 
-format-volume-prefix = "  "
+format-volume-prefix = " "
 format-volume-prefix-foreground = ${cores.branco}
 
 format-volume = <label-volume> <bar-volume>
@@ -330,11 +330,11 @@ format-volume = <label-volume> <bar-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${cores.fontes}
 
-label-muted =   00% ───────
+label-muted =   00% ───────
 label-muted-foreground = ${cores.icones-modulos}
 
 bar-volume-gradient = true
-bar-volume-indicator = ●
+bar-volume-indicator = 
 bar-volume-indicator-foreground = ${cores.icones-modulos}
 bar-volume-fill = ─
 bar-volume-empty = ─
