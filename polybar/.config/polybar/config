@@ -315,7 +315,7 @@ label = %percentage_used%%
 label-foreground = #F7819F
 
 
-# Volume     ●
+# Volume     ● 
 [module/volume]
 type = internal/pulseaudio
 interval = 5
@@ -334,12 +334,12 @@ label-muted =   00% 
 label-muted-foreground = ${cores.icones-modulos}
 
 bar-volume-gradient = true
-bar-volume-indicator = 
-bar-volume-indicator-foreground = ${cores.icones-modulos}
-bar-volume-fill = 
-bar-volume-empty = 
+bar-volume-indicator = *
+bar-volume-indicator-foreground = ${cores.branco}
+bar-volume-fill = .
+bar-volume-empty = .
 bar-volume-empty-foreground = ${cores.cinzaescuro}
-bar-volume-width = 8
+bar-volume-width = 10
 bar-volume-foreground-0 = #D8CEF6
 bar-volume-foreground-1 = #D0A9F5
 bar-volume-foreground-2 = #DA81F5
