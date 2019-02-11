@@ -322,8 +322,8 @@ interval = 5
 use-ui-max = false
 
 
-format-volume-prefix = " "
-format-volume-prefix-foreground = ${cores.icones-modulos}
+format-volume-prefix = " "
+format-volume-prefix-foreground = ${cores.branco}
 
 format-volume = <label-volume> <bar-volume>
 
