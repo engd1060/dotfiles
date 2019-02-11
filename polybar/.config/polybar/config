@@ -55,7 +55,7 @@ fixed-center = true
 bottom = false
 locale = pt_BR.UTF-8
 
-background = ${cores.transparente}
+background = ${cores.color1}
 foreground = ${cores.color3}
 
 line-size = 0
