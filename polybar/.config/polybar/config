@@ -323,16 +323,18 @@ use-ui-max = false
 
 format-volume = <ramp-volume> <bar-volume>
 
-format-volume-prefix-0 = " "
-format-volume-prefix-foreground-0 = ${cores.branco}
-format-volume-prefix-1 = " "
-format-volume-prefix-foreground-1 = ${cores.branco}
-format-volume-prefix-2 = " "
-format-volume-prefix-foreground-2 = ${cores.branco}
-format-volume-prefix-3 = " "
-format-volume-prefix-foreground-3 = ${cores.branco}
-format-volume-prefix-4 = " "
-format-volume-prefix-foreground-4 = ${cores.branco}
+ramp-volume-background = #fff
+ramp-volume-foreground = #000
+
+ramp-volume-prefix-0 = " "
+ramp-volume-prefix-1 = " "
+ramp-volume-prefix-2 = " "
+ramp-volume-prefix-3 = " "
+ramp-volume-prefix-4 = " "
+ramp-volume-prefix-5 = " "
+ramp-volume-prefix-6 = " "
+
+
 
 
 label-volume = %percentage%%
