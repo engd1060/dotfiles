@@ -323,7 +323,7 @@ use-ui-max = true
 
 format-volume = <ramp-volume> <label-volume> <bar-volume>
 
-ramp-volume-background = ${cores.transparente}
+ramp-volume-background = ${cores.background}
 ramp-volume-foreground = ${cores.branco}
 
 ramp-volume-0 = " "
