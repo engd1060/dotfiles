@@ -99,7 +99,7 @@ fixed-center = true
 bottom = true
 locale = pt_BR.UTF-8
 
-background = ${cores.transparente}
+background = #00555555
 foreground = ${cores.transparente}
 
 line-size = 0
