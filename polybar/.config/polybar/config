@@ -335,8 +335,8 @@ ramp-volume-4 = " "
 label-volume = %percentage%%
 label-volume-foreground = ${cores.fontes}
 
-label-muted =  00% 
-label-muted-foreground = ${cores.icones-modulos}
+label-muted =  00% ────────
+label-muted-foreground = ${cores.branco}
 
 bar-volume-gradient = true
 bar-volume-indicator = •
@@ -344,7 +344,7 @@ bar-volume-indicator-foreground = ${cores.branco}
 bar-volume-fill = ─
 bar-volume-empty = ─
 bar-volume-empty-foreground = ${cores.cinzaescuro}
-bar-volume-width = 8
+bar-volume-width = 9
 bar-volume-foreground-0 = #D8CEF6
 bar-volume-foreground-1 = #D0A9F5
 bar-volume-foreground-2 = #DA81F5
