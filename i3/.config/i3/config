@@ -19,7 +19,7 @@ set $ws4 "4: studio"
 set $ws5 "5: codes"
 set $ws6 "6: work"
 set $ws7 "7: pc"
-set $ws8 "8: art"
+set $ws8 "8: art"
 set $ws9 "9: games"
 set $wsv "v:  video"
 #set $ws11 "11:  teste"
@@ -28,13 +28,20 @@ set $wsv "v:  video"
 
 
 # Application shortcuts
+# bindsym [--release] [<Group>+][<Modifiers>+]<keysym> command
+# bindcode [--release] [<Group>+][<Modifiers>+]<keycode> command
 
 bindsym F10 exec --no-startup-id $HOME/.local/bin/git-cron.sh
 bindsym F11 exec --no-startup-id $HOME/github/dotfiles/install.sh
-
 bindsym $mod+Return exec --no-startup-id termite &
-
 bindsym Print exec --no-startup-id $HOME/.local/bin/screenshot.sh
+
+bindcode 114 exec termite -e htop
+
+
+
+
+
 #bindsym --release $mod+K exec --no-startup-id $HOME/.local/bin/screencast.sh
 
 # Audio/Brightness Control
