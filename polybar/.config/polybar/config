@@ -372,15 +372,14 @@ format-underline = ${cores.transparente}
 format-foreground = ${cores.color1}
 label = %date%
 label-foreground = ${cores.color1}
-click-right = dunstify "`cal`"
 
 # Calendário
 [module/calendario]
 type = custom/text
 content = 
-content-foreground = ${cores.foreground}
+content-foreground = ${cores.color1}
 content-underline = $bg
-click-left = dunstify "`cal`"
+click-left = dunstify -t 1500 "`cal`"
 
 
 # Hora
