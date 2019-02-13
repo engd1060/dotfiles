@@ -103,7 +103,7 @@ bindsym $mod+space focus mode_toggle
 #bindsym $mod+8 workspace $ws8
 #bindsym $mod+9 workspace $ws9
 
-# testando mais de 10 WS
+# mais de 10 WS
 set $mode_workspace "goto_ws"
 mode $mode_workspace {
     bindsym 1 workspace 1; mode "default"
