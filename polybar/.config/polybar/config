@@ -245,12 +245,12 @@ interval = 1
 hwmon-path = /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/hwmon/hwmon3/temp1_input
 
 format = <label>
-label = RX480 %temperature-c%
+label = GPU %temperature-c%
 format-foreground = ${cores.azul}
 
 warn-temperature = 65
 format-warn = <label-warn>
-label-warn = RX480  %temperature-c%
+label-warn = GPU  %temperature-c%
 label-warn-foreground = #f00
 
 # Kernel
