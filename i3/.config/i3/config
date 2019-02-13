@@ -41,7 +41,11 @@ bindsym $alt+Tab exec --no-startup-id rofi -show window
 #bindcode 114 exec --nostartup-id termite -e htop
 #bindsym $mod+F1 exec --nostartup-id termite -e htop
 
+# Next workspaces
+bindsym $mod+Tab workspace next
 
+# Restart i3
+bindsym $mod+Shift+r restart
 
 
 #bindsym --release $mod+K exec --no-startup-id $HOME/.local/bin/screencast.sh
@@ -141,11 +145,7 @@ bindsym $mod+shift+w mode $mode_move_to_workspace
 
 
 
-# Next workspaces
-bindsym $mod+Tab workspace next
 
-# Restart i3
-bindsym $mod+Shift+r restart
 
 # Gaps
 gaps inner 15
