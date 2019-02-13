@@ -222,8 +222,9 @@ client.background       $bg
 
 
 # Startup
-exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
+
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id $HOME/.local/bin/xrandr.sh
 exec_always --no-startup-id $HOME/.local/bin/compton.sh
 exec_always --no-startup-id numlockx &
+exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
