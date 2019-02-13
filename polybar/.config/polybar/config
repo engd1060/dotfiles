@@ -372,7 +372,7 @@ format-underline = ${cores.transparente}
 format-foreground = ${cores.color1}
 label = %date%
 label-foreground = ${cores.color1}
-click-left = dunstify "`cal`"
+click-right = dunstify "`cal`"
 
 
 # Hora
