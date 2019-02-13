@@ -6,4 +6,4 @@ img=wallpaper.jpg
 
 wallpaper=$dir/$img
 
-wal -i $wallpaper
+wal -i $wallpaper -o wal-set
