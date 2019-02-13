@@ -380,7 +380,7 @@ content = 
 content-foreground = ${cores.color1}
 content-underline = $bg
 #click-left = dunstify -t 1500 "`cal`"
-click-left = dunstify "$(cal | sed -E "s/..(\s)/&\1/g;s/\s(\b$(date +%d)\b)\s?/[\1]/")"
+click-left = dunstify -t 2500 "$(cal | sed -E "s/..(\s)/&\1/g;s/\s(\b$(date +%d)\b)\s?/[\1]/")"
 
 # Hora
 [module/hora]
