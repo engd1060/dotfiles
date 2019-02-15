@@ -461,10 +461,10 @@ format-foreground = ${cores.color1}
 format-background = ${cores.transparente}
 
 
-label-open = "¿?"
+label-open = "<="
 label-open-font = 4
 label-close = ""
-label-close-foreground = ${cores.color1}
+label-close-foreground = ${cores.color3}
 label-separator = "|"
 label-separator-foreground = ${cores.color1}
 
