@@ -374,7 +374,6 @@ type = custom/text
 content = 
 content-foreground = ${cores.color1}
 content-underline = $bg
-#click-left = dunstify -t 1500 "`cal`"
 click-left = dunstify -t 2500 "$(cal | sed -E "s/..(\s)/&\1/g;s/\s(\b$(date +%d)\b)\s?/[\1]/")"
 
 # Hora
@@ -568,21 +567,21 @@ click-left = /usr/bin/0ad && workspace 9 &
 [module/menu-power]
 type = custom/text
 content = 
-content-foreground = ${cores.cinzaescuro}
+content-foreground = ${cores.color1}
 click-left = ~/.local/bin/menu-power.sh &
 
 # Lock
 [module/lock]
 type = custom/text
 content = 
-content-foreground = ${cores.cinzaescuro}
+content-foreground = ${cores.color1}
 click-left = ~/.local/bin/i3lock.sh &
 
 # Exit
 [module/exit]
 type = custom/text
 content = 
-content-foreground = ${cores.cinzaescuro}
+content-foreground = ${cores.color1}
 click-left = sudo pkill X
 
 [settings]
