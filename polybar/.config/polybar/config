@@ -296,14 +296,14 @@ label = CPU %percentage%%
 
 ; Spacing between individual per-core ramps
 ramp-coreload-spacing = 1
-ramp-coreload-0 = ▁
-ramp-coreload-1 = ▂
-ramp-coreload-2 = ▃
-ramp-coreload-3 = ▄
-ramp-coreload-4 = ▅
-ramp-coreload-5 = ▆
-ramp-coreload-6 = ▇
-ramp-coreload-7 = █
+ramp-coreload-0 = 1
+ramp-coreload-1 = 2
+ramp-coreload-2 = 3
+ramp-coreload-3 = 4
+ramp-coreload-4 = 5
+ramp-coreload-5 = 6
+ramp-coreload-6 = 7
+ramp-coreload-7 = 8
 
 
 # temperatura do cpu
