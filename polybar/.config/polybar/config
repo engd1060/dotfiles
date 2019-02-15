@@ -359,13 +359,7 @@ ramp-volume-1 = " "
 ramp-volume-2 = " "
 ramp-volume-3 = " "
 ramp-volume-4 = " "
-ramp-volume-5 = " "
-ramp-volume-6 = " "
-ramp-volume-7 = " "
-ramp-volume-8 = " "
-ramp-volume-9 = " "
-ramp-volume-10 = " "
-ramp-volume-11 = " "
+ramp-volume-5 = " "
 
 label-volume = %percentage%%
 
