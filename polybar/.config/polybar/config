@@ -202,11 +202,8 @@ interval = 30
 fixed-values = true
 
 format-mounted-prefix = " "
-format-mounted-prefix-foreground = ${cores.color1}
-format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
 label-mounted = %percentage_used%%
-label-mounted-foreground = ${cores.color1}
 
 # Discos/Storage
 [module/storage]
@@ -216,11 +213,8 @@ interval = 30
 fixed-values = true
 
 format-mounted-prefix = " "
-format-mounted-prefix-foreground = ${cores.color1}
-format-mounted-underline = ${cores.transparente}
 format-mounted = <label-mounted>
 label-mounted = %percentage_used%%
-label-mounted-foreground = ${cores.color1}
 
 # Usuário
 [module/usuario]
@@ -228,10 +222,8 @@ type = custom/script
 interval = 5
 
 format-prefix = " "
-format-prefix-foreground = ${cores.color1}
 format-underline = ${cores.transparente}
 exec = echo $USER@$HOSTNAME
-format-foreground = ${cores.color1}
 
 # Placa de vídeo (temperatura)
 [module/placadevideo]
@@ -254,10 +246,8 @@ type = custom/script
 interval = 60
 
 format-prefix = ""
-format-prefix-foreground = ${cores.icones-modulos}
 exec = uname -r
 tail = false
-#format-foreground = ${cores.color1}
 
 # Spotify
 [module/spotify]
@@ -265,8 +255,6 @@ interval = 1.5
 format-prefix = " "
 format-prefix-foreground = ${cores.spotify}
 format-padding = 1
-format-foreground = ${cores.color1}
-format-underline = ${cores.transparente}
 type = custom/script
 exec = ~/.local/bin/spotify.sh "%artist% - %title% (%album%)"
 tail = true
@@ -318,12 +306,9 @@ units = true
 ;   <label> (default)
 ;   <ramp>
 format = <label> 
-
 label =  %temperature-c% 
-label-foreground = ${cores.color7}
 
 # ramp vai de 0 até warn-temperature
-
 ; Available tags:
 ;   <label-warn> (default)
 ;   <ramp>
@@ -338,12 +323,8 @@ label-warn-foreground = #f00
 [module/memoria]
 type = internal/memory
 format = <label>
-
 format-prefix = " "
-format-prefix-foreground = ${cores.color7}
-
 label = %percentage_used%%
-label-foreground = ${cores.color7}
 
 
 # Volume       ● • 
