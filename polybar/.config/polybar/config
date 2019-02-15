@@ -192,7 +192,7 @@ label = %title%
 label-maxlen = 80
 
 label-empty = Sem janelas
-label-empty-foreground = ${cores.fontes}
+label-empty-foreground = ${cores.color1}
 
 # Discos/Root
 [module/root]
