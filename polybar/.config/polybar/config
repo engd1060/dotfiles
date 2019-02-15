@@ -285,7 +285,7 @@ label = %percentage%%
 label-foreground = #FF8000
 
 ramp-coreload-0 = ▁
-ramp-coreload-0-foreground = ${cores.color1}
+ramp-coreload-0-foreground = ${cores.color6}
 ramp-coreload-1 = ▂
 ramp-coreload-1-foreground = #F7819F
 ramp-coreload-2 = ▃
@@ -307,7 +307,7 @@ type = internal/memory
 format = <label>
 
 format-prefix = " "
-format-prefix-foreground = #F7819F
+format-prefix-foreground = ${cores.color7}
 
 label = %percentage_used%%
 label-foreground = #F7819F
