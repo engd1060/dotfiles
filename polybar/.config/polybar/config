@@ -98,7 +98,7 @@ bottom = true
 locale = pt_BR.UTF-8
 
 background = ${cores.transparente}
-foreground = ${cores.color7}
+foreground = ${cores.color3}
 
 line-size = 0
 line-color = ${cores.vermelho}
@@ -181,18 +181,11 @@ label-urgent-padding = 1
 type = internal/xwindow
 
 format-prefix = "  "
-format-prefix-foreground = ${cores.color1}
-
 format = <label>
-format-background = ${cores.transparente}
-format-foreground =  ${cores.color1}
 format-padding = 4
-
 label = %title%
 label-maxlen = 80
-
 label-empty = Sem janelas
-label-empty-foreground = ${cores.color1}
 
 # Discos/Root
 [module/root]
