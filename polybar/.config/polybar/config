@@ -257,7 +257,7 @@ format-prefix = ""
 format-prefix-foreground = ${cores.icones-modulos}
 exec = uname -r
 tail = false
-format-foreground = ${cores.color1}
+#format-foreground = ${cores.color1}
 
 # Spotify
 [module/spotify]
@@ -570,7 +570,7 @@ click-left = ~/.local/bin/i3lock.sh &
 [module/exit]
 type = custom/text
 content = 
-content-foreground = ${cores.color1}
+#content-foreground = ${cores.color1}
 click-left = sudo pkill X
 
 [settings]
