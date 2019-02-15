@@ -141,16 +141,16 @@ wrapping-scroll = true
 reverse-scroll = false
 fuzzy-match = true
 
-ws-icon-0 = 1; terminal
-ws-icon-1 = 2; browser
-ws-icon-2 = 3; chats
-ws-icon-3 = 4; studio
-ws-icon-4 = 5; codes
-ws-icon-5 = 6;龎office
-ws-icon-6 = 7; pc
-ws-icon-7 = 8; art
-ws-icon-8 = 9; games
-ws-icon-9 = v; video
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;龎
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = v;
 #ws-icon-10 = 11;  teste
 #ws-icon-11 = 12;  teste2
 
@@ -323,22 +323,6 @@ label =  %temperature-c%
 label-foreground = ${cores.color7}
 
 # ramp vai de 0 até warn-temperature
-ramp-0 = 
-ramp-0-foreground = 0000ff
-ramp-1 = 
-ramp-1-foreground = 5555ff
-ramp-2 = 
-ramp-2-foreground = 7777ff
-ramp-3 = 
-ramp-3-foreground = 888888
-ramp-4 = 
-ramp-4-foreground = ff8888
-ramp-5 = 
-ramp-5-foreground = ff7777
-ramp-6 = 
-ramp-6-foreground = ff5555
-ramp-7 = 
-ramp-7-foreground = ff0000
 
 ; Available tags:
 ;   <label-warn> (default)
