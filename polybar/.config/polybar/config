@@ -282,7 +282,7 @@ format = <label> <ramp-coreload>
 #format-prefix-foreground = #FF8000
 
 label = %percentage%%
-label-foreground = #FF8000
+label-foreground = ${cores.color7}
 
 ramp-coreload-0 = ▁
 ramp-coreload-0-foreground = ${cores.color6}
@@ -300,6 +300,50 @@ ramp-coreload-6 = ▇
 ramp-coreload-6-foreground = #B40431
 ramp-coreload-7 = █
 ramp-coreload-7-foreground = #8A0829
+
+# temperatura do cpu
+[module/temperatura-cpu]
+type = internal/temperature
+interval = 1.0
+#format-prefix = "%{F#dd5555} "
+hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
+units = true
+
+; Available tags:
+;   <label> (default)
+;   <ramp>
+format = <label> 
+
+label =  %temperature-c% 
+label-foreground = ${cores.color7}
+
+# ramp vai de 0 até warn-temperature
+ramp-0 = 
+ramp-0-foreground = 0000ff
+ramp-1 = 
+ramp-1-foreground = 5555ff
+ramp-2 = 
+ramp-2-foreground = 7777ff
+ramp-3 = 
+ramp-3-foreground = 888888
+ramp-4 = 
+ramp-4-foreground = ff8888
+ramp-5 = 
+ramp-5-foreground = ff7777
+ramp-6 = 
+ramp-6-foreground = ff5555
+ramp-7 = 
+ramp-7-foreground = ff0000
+
+; Available tags:
+;   <label-warn> (default)
+;   <ramp>
+format-warn = <label-warn>
+warn-temperature = 50
+label-warn =   %temperature-c%
+label-warn-foreground = #f00
+
+
 
 # Memória
 [module/memoria]
@@ -386,50 +430,6 @@ format-underline = ${cores.transparente}
 format-foreground = ${cores.color1}
 label = %time%
 label-foreground = ${cores.color1}
-
-# temperatura do cpu
-[module/temperatura-cpu]
-type = internal/temperature
-interval = 1.0
-#format-prefix = "%{F#dd5555} "
-hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
-units = true
-
-; Available tags:
-;   <label> (default)
-;   <ramp>
-format = <label> 
-
-label =  %temperature-c% 
-label-foreground = ${cores.color7}
-
-# ramp vai de 0 até warn-temperature
-ramp-0 = 
-ramp-0-foreground = 0000ff
-ramp-1 = 
-ramp-1-foreground = 5555ff
-ramp-2 = 
-ramp-2-foreground = 7777ff
-ramp-3 = 
-ramp-3-foreground = 888888
-ramp-4 = 
-ramp-4-foreground = ff8888
-ramp-5 = 
-ramp-5-foreground = ff7777
-ramp-6 = 
-ramp-6-foreground = ff5555
-ramp-7 = 
-ramp-7-foreground = ff0000
-
-; Available tags:
-;   <label-warn> (default)
-;   <ramp>
-format-warn = <label-warn>
-warn-temperature = 50
-label-warn =   %temperature-c%
-label-warn-foreground = #f00
-
-
 
 # Wireless
 [module/wireless]
