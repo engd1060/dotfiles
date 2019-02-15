@@ -122,7 +122,7 @@ font-4 = Font Awesome 5 Brands:pixelsize=10;2
 font-5 = Ionicons:size=11;2
 font-6 = Material Icons:size=10;2
 
-modules-left = menu-power lock exit usuario placadevideo memoria cpu-temp cpu 
+modules-left = power-menu menu-power lock exit usuario placadevideo memoria cpu-temp cpu 
 modules-center = menu-apps git-cron screenshot firefox telegram steam 0ad
 modules-right = ethernet wireless volume
 
@@ -454,14 +454,14 @@ label-indicator-padding = 2
 #=========================================================================
 # MENU
 #=========================================================================
-[module/menu-apps]
+[module/power-menu]
 type = custom/menu
 
 format-foreground = ${cores.color3}
 format-background = ${cores.transparente}
 
 
-label-open = "<="
+label-open = "陵"
 label-open-font = 4
 label-close = ""
 label-separator = "  "
