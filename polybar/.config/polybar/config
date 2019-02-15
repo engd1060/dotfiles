@@ -455,29 +455,28 @@ label-indicator-padding = 2
 # MENU
 #=========================================================================
 [module/menu-apps]
-
 type = custom/menu
 
-format-foreground = ${colors.xcolor7}
-format-background = ${colors.xcolor0}
+format-foreground = ${cores.color1}
+format-background = ${cores.transparente}
 
 
 label-open = "¿?"
 label-open-font = 4
 label-close = ""
-label-close-foreground = ${colors.lime}
+label-close-foreground = ${cores.color1}
 label-separator = " / "
-label-separator-foreground = ${colors.xcolor1}
+label-separator-foreground = ${cores.color1}
 
 
 ; reboot
 menu-0-1 = 
 menu-0-1-exec = systemctl reboot
-menu-0-1-foreground = ${colors.salmon}
+menu-0-1-foreground = ${cores.color1}
 ; shutdown
 menu-0-0 = "  "
 menu-0-0-exec = systemctl poweroff
-menu-0-0-foreground = ${colors.salmon}
+menu-0-0-foreground = ${cores.color1}
 
 
 
