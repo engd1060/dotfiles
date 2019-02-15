@@ -401,7 +401,7 @@ units = true
 format = <label> 
 
 label =  %temperature-c% 
-label-foreground = #FF8000
+label-foreground = ${cores.color7}
 
 # ramp vai de 0 até warn-temperature
 ramp-0 = 
