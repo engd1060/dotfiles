@@ -465,16 +465,16 @@ label-open = "¿?"
 label-open-font = 4
 label-close = ""
 label-close-foreground = ${cores.color1}
-label-separator = " / "
+label-separator = "|"
 label-separator-foreground = ${cores.color1}
 
 
 ; reboot
-menu-0-1 = 
+menu-0-1 = ""
 menu-0-1-exec = systemctl reboot
 menu-0-1-foreground = ${cores.color1}
 ; shutdown
-menu-0-0 = "  "
+menu-0-0 = ""
 menu-0-0-exec = systemctl poweroff
 menu-0-0-foreground = ${cores.color1}
 
