@@ -457,25 +457,32 @@ label-indicator-padding = 2
 [module/power-menu]
 type = custom/menu
 
-format-foreground = ${cores.color3}
-format-background = ${cores.transparente}
-
-
 label-open = "陵"
 label-open-font = 4
 label-close = ""
 label-separator = "  "
-label-separator-foreground = ${cores.color1}
-
+#label-separator-foreground = ${cores.color1}
 
 ; reboot
 menu-0-1 = ""
 menu-0-1-exec = systemctl reboot
 menu-0-1-foreground = ${cores.color1}
-; shutdown
+
+; menu power
 menu-0-0 = ""
-menu-0-0-exec = systemctl poweroff
+menu-0-0 = ~/.local/bin/menu-power.sh &
+#menu-0-0-exec = systemctl poweroff
 menu-0-0-foreground = ${cores.color1}
+
+# Lock
+menu-0-2 = ""
+menu-0-2-exec = ~/.local/bin/i3lock.sh &
+menu-0-2-foreground = ${cores.color1}
+
+# Exit
+menu-0-3 = "陵"
+menu-0-3-exec = sudo pkill X
+menu-0-3-foreground = ${cores.color1}
 
 
 
@@ -524,24 +531,6 @@ click-left = /usr/bin/steam && workspace 9 &
 type = custom/text
 content = 0
 click-left = /usr/bin/0ad && workspace 9 &
-
-# Menu Power
-[module/menu-power]
-type = custom/text
-content = 
-click-left = ~/.local/bin/menu-power.sh &
-
-# Lock
-[module/lock]
-type = custom/text
-content = 
-click-left = ~/.local/bin/i3lock.sh &
-
-# Exit
-[module/exit]
-type = custom/text
-content = 
-click-left = sudo pkill X
 
 [settings]
 pseudo-transparency = true
