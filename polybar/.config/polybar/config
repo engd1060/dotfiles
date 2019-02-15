@@ -465,7 +465,7 @@ interval = 1.0
 
 format-connected = <label-connected> <ramp-signal>
 format-packetloss = <animation-packetloss>
-label-connected =  %upspeed% ￬ %downspeed% |  %local_ip%
+label-connected = ﰵ %upspeed% | ﰬ %downspeed%   %local_ip%
 label-connected-foreground = ${cores.fontes}
 
 ramp-signal-0 = 
