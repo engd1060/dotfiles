@@ -310,7 +310,7 @@ format-prefix = " "
 format-prefix-foreground = ${cores.color7}
 
 label = %percentage_used%%
-label-foreground = #F7819F
+label-foreground = ${cores.color7}
 
 
 # Volume       ● • 
@@ -322,7 +322,7 @@ use-ui-max = true
 format-volume = <ramp-volume> <label-volume> 
 
 ramp-volume-background = ${cores.transparente}
-ramp-volume-foreground = ${cores.branco}
+ramp-volume-foreground = ${cores.color7}
 
 ramp-volume-0 = " "
 ramp-volume-1 = " "
@@ -334,14 +334,14 @@ ramp-volume-6 = " "
 ramp-volume-7 = " "
 
 label-volume = %percentage%%
-label-volume-foreground = ${cores.fontes}
+label-volume-foreground = ${cores.color7}
 
 label-muted =  00% ───────
-label-muted-foreground = ${cores.branco}
+label-muted-foreground = ${cores.color7}
 
 bar-volume-gradient = true
 bar-volume-indicator = I
-bar-volume-indicator-foreground = ${cores.branco}
+bar-volume-indicator-foreground = ${cores.color7}
 bar-volume-fill = ─
 bar-volume-empty = ─
 bar-volume-empty-foreground = ${cores.cinzaescuro}
