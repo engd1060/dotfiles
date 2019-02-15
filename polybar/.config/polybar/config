@@ -457,15 +457,14 @@ label-indicator-padding = 2
 [module/menu-apps]
 type = custom/menu
 
-format-foreground = ${cores.color1}
+format-foreground = ${cores.color3}
 format-background = ${cores.transparente}
 
 
 label-open = "<="
 label-open-font = 4
 label-close = ""
-label-close-foreground = ${cores.color3}
-label-separator = "|"
+label-separator = "  "
 label-separator-foreground = ${cores.color1}
 
 
