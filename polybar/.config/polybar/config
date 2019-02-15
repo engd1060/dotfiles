@@ -62,10 +62,10 @@ line-color = ${cores.vermelho}
 border-size = 1
 border-color = ${cores.transparente}
 
-padding-left = 2
-padding-right = 2
+padding-left = 1
+padding-right = 1
 
-underline-size = 2
+underline-size = 0
 overline-size = 2
 
 module-margin-left = 1
@@ -79,8 +79,8 @@ font-4 = Font Awesome 5 Brands:pixelsize=10;2
 font-5 = Ionicons:size=11;2
 font-6 = Material Icons:size=10;2
 
-modules-left = usuario kernel spotify 
-modules-center =  i3 janela
+modules-left = i3 usuario kernel spotify 
+modules-center = janela
 modules-right = keyboard root storage calendario data hora exit lock menu-power
 
 cursor-click = pointer
