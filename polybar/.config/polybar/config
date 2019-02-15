@@ -516,32 +516,32 @@ click-left = ~/.local/bin/screenshot.sh &
 [module/screencast]
 type = custom/text
 content = 
-content-foreground = ${cores.vermelho}
-content-underline = ${cores.transparente}
+#content-foreground = ${cores.vermelho}
+#content-underline = ${cores.transparente}
 click-left = ~/.local/bin/screencast.sh &
 
 # Firefox
 [module/firefox]
 type = custom/text
 content = 
-content-foreground = ${cores.branco}
-content-underline = ${cores.transparente}
+#content-foreground = ${cores.branco}
+#content-underline = ${cores.transparente}
 click-left = /usr/bin/firefox && workspace 2 &
 
 # Telegram
 [module/telegram]
 type = custom/text
 content = 
-content-foreground = ${cores.branco}
-content-underline = ${cores.transparente}
+#content-foreground = ${cores.branco}
+#content-underline = ${cores.transparente}
 click-left = /usr/bin/telegram-desktop && workspace 3 &
 
 # Steam
 [module/steam]
 type = custom/text
 content = 
-content-foreground = ${cores.branco}
-content-underline = ${cores.transparente}
+#content-foreground = ${cores.branco}
+#content-underline = ${cores.transparente}
 click-left = /usr/bin/steam && workspace 9 &
 
 # 0 A.D.
