@@ -354,9 +354,6 @@ use-ui-max = true
 # <bar-volume>
 format-volume = <ramp-volume> <label-volume> 
 
-ramp-volume-background = ${cores.transparente}
-ramp-volume-foreground = ${cores.color7}
-
 ramp-volume-0 = " "
 ramp-volume-1 = " "
 ramp-volume-2 = " "
@@ -367,10 +364,9 @@ ramp-volume-6 = " "
 ramp-volume-7 = " "
 
 label-volume = %percentage%%
-label-volume-foreground = ${cores.color7}
 
-label-muted =  00% ───────
-label-muted-foreground = ${cores.color7}
+label-muted =  
+label-muted-foreground = ${cores.color2}
 
 bar-volume-gradient = true
 bar-volume-indicator = I
@@ -396,17 +392,12 @@ date = %a, %d-%m-%Y
 date-alt = %A, %d de %B de %G%
 time = %H:%M
 format = <label>
-format-underline = ${cores.transparente}
-format-foreground = ${cores.color1}
 label = %date%
-label-foreground = ${cores.color1}
 
 # Calendário
 [module/calendario]
 type = custom/text
 content = 
-content-foreground = ${cores.color1}
-content-underline = $bg
 click-left = dunstify -t 2500 "$(cal | sed -E "s/..(\s)/&\1/g;s/\s(\b$(date +%d)\b)\s?/[\1]/")"
 
 # Hora
@@ -454,7 +445,6 @@ interval = 1.0
 format-connected = <label-connected> <ramp-signal>
 format-packetloss = <animation-packetloss>
 label-connected = ﰵ %upspeed% | ﰬ %downspeed%   %local_ip%
-label-connected-foreground = ${cores.fontes}
 
 ramp-signal-0 = 
 ramp-signal-0-foreground = ${cores.icones-modulos}
@@ -481,16 +471,12 @@ format-spacing = 0
 # Default: %layout%
 label-layout = %layout% 
 label-layout-padding = 2
-label-layout-background = #bc99ed
-label-layout-foreground = #000
 
 ; Available tokens:
 ;   %name%
 ; Default: %name%
 label-indicator = A
 label-indicator-padding = 2
-label-indicator-foreground = ${cores.color1}
-label-indicator-background = ${cores.transparente}
 
 #=========================================================================#
 #====================Launch Icons=========================================#
@@ -500,77 +486,60 @@ label-indicator-background = ${cores.transparente}
 [module/git-cron]
 type = custom/text
 content = 
-content-foreground = ${cores.branco}
-content-underline = ${cores.transparente}
 click-left = ~/.local/bin/git-cron.sh -c &
 
 # Screenshot
 [module/screenshot]
 type = custom/text
 content = 
-content-foreground = ${cores.branco}
-content-underline = ${cores.transparente}
 click-left = ~/.local/bin/screenshot.sh &
 
 # Screencast
 [module/screencast]
 type = custom/text
 content = 
-#content-foreground = ${cores.vermelho}
-#content-underline = ${cores.transparente}
 click-left = ~/.local/bin/screencast.sh &
 
 # Firefox
 [module/firefox]
 type = custom/text
 content = 
-#content-foreground = ${cores.branco}
-#content-underline = ${cores.transparente}
 click-left = /usr/bin/firefox && workspace 2 &
 
 # Telegram
 [module/telegram]
 type = custom/text
 content = 
-#content-foreground = ${cores.branco}
-#content-underline = ${cores.transparente}
 click-left = /usr/bin/telegram-desktop && workspace 3 &
 
 # Steam
 [module/steam]
 type = custom/text
 content = 
-#content-foreground = ${cores.branco}
-#content-underline = ${cores.transparente}
 click-left = /usr/bin/steam && workspace 9 &
 
 # 0 A.D.
 [module/0ad]
 type = custom/text
 content = 0
-#content-foreground = ${cores.branco}
-#content-underline = ${cores.transparente}
 click-left = /usr/bin/0ad && workspace 9 &
 
 # Menu Power
 [module/menu-power]
 type = custom/text
 content = 
-#content-foreground = ${cores.color1}
 click-left = ~/.local/bin/menu-power.sh &
 
 # Lock
 [module/lock]
 type = custom/text
 content = 
-#content-foreground = ${cores.color1}
 click-left = ~/.local/bin/i3lock.sh &
 
 # Exit
 [module/exit]
 type = custom/text
 content = 
-#content-foreground = ${cores.color1}
 click-left = sudo pkill X
 
 [settings]
