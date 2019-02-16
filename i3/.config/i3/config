@@ -156,7 +156,7 @@ gaps outer 5
 #smart_borders enable
 
 new_window none
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 
 mode "resize" {
         bindsym j resize shrink width 5 px or 5 ppt
