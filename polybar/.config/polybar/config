@@ -470,8 +470,8 @@ menu-0-1-foreground = ${cores.color1}
 
 ; menu power
 menu-0-0 = ""
-menu-0-0 = ~/.local/bin/menu-power.sh &
-#menu-0-0-exec = systemctl poweroff
+#menu-0-0 = ~/.local/bin/menu-power.sh &
+menu-0-0-exec = systemctl poweroff
 menu-0-0-foreground = ${cores.color1}
 
 # Lock
