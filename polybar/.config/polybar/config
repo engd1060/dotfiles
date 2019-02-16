@@ -54,7 +54,7 @@ bottom = false
 locale = pt_BR.UTF-8
 
 background = ${cores.transparente}
-foreground = ${cores.color4}
+foreground = ${cores.color2}
 
 line-size = 0
 line-color = ${cores.vermelho}
