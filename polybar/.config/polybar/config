@@ -461,12 +461,12 @@ label-open = "陵"
 label-open-font = 4
 label-close = ""
 label-separator = "  "
-#label-separator-foreground = ${cores.color1}
+label-separator-foreground = ${cores.color1}
 
 ; reboot
 menu-0-1 = ""
 menu-0-1-exec = systemctl reboot
-menu-0-1-foreground = ${cores.color1}
+menu-0-1-foreground = ${cores.color3}
 
 ; menu power
 menu-0-0 = ""
