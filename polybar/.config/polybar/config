@@ -122,7 +122,7 @@ font-4 = Font Awesome 5 Brands:pixelsize=10;2
 font-5 = Ionicons:size=11;2
 font-6 = Material Icons:size=10;2
 
-modules-left = GPU memoria cpu-temp cpu 
+modules-left = GPU-temp memoria cpu cpu-temp 
 modules-center = menu-apps git-cron screenshot firefox telegram steam 0ad
 modules-right = ethernet wireless volume
 
@@ -219,13 +219,13 @@ format-underline = ${cores.transparente}
 exec = echo $USER@$HOSTNAME
 
 # Placa de vídeo (temperatura)
-[module/GPU]
+[module/GPU-temp]
 type = internal/temperature
 interval = 1
 hwmon-path = /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/hwmon/hwmon2/temp1_input
 
 format = <label>
-label = GPU %temperature-c%
+label = GPU  %temperature-c%
 #format-foreground = ${cores.azul}
 
 warn-temperature = 65
@@ -273,7 +273,7 @@ format = <label>
 ;   %percentage-sum% - Cumulative load on all cores
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = CPU %percentage%%
+label =  %percentage%%
 
 ; Spacing between individual per-core ramps
 ramp-coreload-spacing = 0
@@ -299,7 +299,7 @@ units = true
 ;   <label> (default)
 ;   <ramp>
 format = <label> 
-label =  %temperature-c% 
+label =  %temperature-c% 
 
 # ramp vai de 0 até warn-temperature
 ; Available tags:
