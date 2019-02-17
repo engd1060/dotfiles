@@ -54,7 +54,7 @@ bottom = false
 locale = pt_BR.UTF-8
 
 background = ${cores.transparente}
-foreground = ${cores.color2}
+foreground = ${cores.foreground}
 
 line-size = 0
 line-color = ${cores.vermelho}
@@ -79,8 +79,8 @@ font-4 = Font Awesome 5 Brands:pixelsize=10;2
 font-5 = Ionicons:size=11;2
 font-6 = Material Icons:size=10;2
 
-modules-left = i3 spotify 
-modules-center = janela
+modules-left = janela spotify 
+modules-center = i3
 modules-right = keyboard root storage calendario data hora 
 
 cursor-click = pointer
