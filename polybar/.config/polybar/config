@@ -170,7 +170,7 @@ label-mode-padding = 1
 label-mode-background = #e60053
 
 label-focused = %icon%
-label-focused-foreground = ${cores.color2}
+label-focused-foreground = ${cores.color7}
 label-focused-background = ${cores.color1}
 label-focused-underline = ${cores.transparente}
 label-focused-padding = 1
@@ -384,21 +384,13 @@ interval = 1.0
 format-connected = <label-connected> <ramp-signal>
 format-packetloss = <animation-packetloss>
 label-connected = %upspeed% %downspeed% 直%essid%
-label-connected-foreground = ${cores.fontes}
 
 ramp-signal-0 = ○○○○○
-;ramp-signal-0-foreground = #BD574C
 ramp-signal-1 = ●○○○○
-;ramp-signal-1-foreground = #FF8066
 ramp-signal-2 = ●●○○○
-;ramp-signal-2-foreground = #F5DE72
 ramp-signal-3 = ●●●○○
-;ramp-signal-3-foreground = #D8DE72
 ramp-signal-4 = ●●●●○
-;ramp-signal-4-foreground = #BADE72
 ramp-signal-5 = ●●●●●
-;ramp-signal-5-foreground = #96DE72
-ramp-signal-foreground = ${cores.fontes}
 
 # Ethernet
 [module/ethernet]
@@ -413,7 +405,7 @@ label-connected = ﰵ %upspeed% | ﰬ %downspeed%   %local_ip%
 ramp-signal-0 = 
 ramp-signal-0-foreground = ${cores.icones-modulos}
 
-#========================================================================
+
 # indicador do teclado
 [module/keyboard]
 type = internal/xkeyboard
@@ -445,6 +437,7 @@ label-indicator-padding = 2
 #=========================================================================
 # MENU
 #=========================================================================
+
 [module/power-menu]
 type = custom/menu
 
