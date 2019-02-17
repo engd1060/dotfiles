@@ -474,6 +474,17 @@ menu-0-3-foreground = ${cores.color3}
 #====================Launch Icons=========================================#
 #=========================================================================#
 
+
+#!/bin/bash
+
+## Verifica se o gedit está sendo executado
+#if pgrep "gedit" > /dev/null
+#then
+#    echo "Executando"
+#else
+#    echo "Parado"
+#fi
+
 # Git-Cron
 [module/git-cron]
 type = custom/text
@@ -496,13 +507,13 @@ click-left = ~/.local/bin/screencast.sh &
 [module/firefox]
 type = custom/text
 content = 
-click-left = /usr/bin/firefox && workspace 2 &
+click-left = /usr/bin/firefox &
 
 # Telegram
 [module/telegram]
 type = custom/text
 content = 
-click-left = /usr/bin/telegram-desktop && workspace 3 &
+click-left = /usr/bin/telegram-desktop & workspace 3 &
 
 # Steam
 [module/steam]
