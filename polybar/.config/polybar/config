@@ -136,7 +136,7 @@ cursor-scroll = ns-resize
 # separador
 [module/|]
 type = custom/text
-content = |
+content =|
 
 # i3
 [module/i3]
