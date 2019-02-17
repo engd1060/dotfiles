@@ -472,17 +472,17 @@ menu-0-1-foreground = ${cores.color1}
 menu-0-0 = ""
 #menu-0-0 = ~/.local/bin/menu-power.sh &
 menu-0-0-exec = systemctl poweroff
-menu-0-0-foreground = ${cores.color1}
+menu-0-0-foreground = ${cores.color3}
 
 # Lock
 menu-0-2 = ""
 menu-0-2-exec = ~/.local/bin/i3lock.sh &
-menu-0-2-foreground = ${cores.color1}
+menu-0-2-foreground = ${cores.color3}
 
 # Exit
 menu-0-3 = "陵"
 menu-0-3-exec = sudo pkill X
-menu-0-3-foreground = ${cores.color1}
+menu-0-3-foreground = ${cores.color3}
 
 
 
