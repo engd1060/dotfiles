@@ -507,7 +507,8 @@ click-left = ~/.local/bin/screencast.sh &
 [module/firefox]
 type = custom/text
 content = 
-click-left = /usr/bin/firefox &
+click-left = workspace 2
+#/usr/bin/firefox &
 
 # Telegram
 [module/telegram]
