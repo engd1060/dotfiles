@@ -122,12 +122,21 @@ font-4 = Font Awesome 5 Brands:pixelsize=10;2
 font-5 = Ionicons:size=11;2
 font-6 = Material Icons:size=10;2
 
-modules-left = GPU-temp memoria cpu cpu-temp 
+modules-left = GPU-temp | memoria | cpu cpu-temp 
 modules-center = menu-apps git-cron screenshot firefox telegram steam 0ad
-modules-right = ethernet wireless volume
+modules-right = ethernet wireless | volume
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+#==============================================================================#
+#                                     Módulos                                  #
+#==============================================================================#
+
+# separador
+[module/|]
+type = custom/text
+content = |
 
 # i3
 [module/i3]
