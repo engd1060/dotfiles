@@ -21,7 +21,7 @@ color13 = ${xrdb:color13}
 color14 = ${xrdb:color14}
 color15 = ${xrdb:color15}
 
-transparente = #4D000000
+transparente = #00000000
 
 fontes = #D3D3D3
 icones = #B6C0C9
