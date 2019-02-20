@@ -79,8 +79,8 @@ font-4 = Font Awesome 5 Brands:pixelsize=10;2
 font-5 = Ionicons:size=11;2
 font-6 = Material Icons:size=10;2
 
-modules-left = power-menu | usuario janela spotify 
-modules-center = i3
+modules-left = power-menu | usuario spotify 
+modules-center = janela 
 modules-right = keyboard root storage | calendario data hora 
 
 cursor-click = pointer
@@ -123,7 +123,7 @@ font-5 = Ionicons:size=11;2
 font-6 = Material Icons:size=10;2
 
 modules-left = GPU-temp | memoria | cpu cpu-temp 
-modules-center = git-cron screenshot firefox telegram steam 0ad
+modules-center = i3 git-cron screenshot firefox telegram steam 0ad
 modules-right = ethernet wireless | volume
 
 cursor-click = pointer
