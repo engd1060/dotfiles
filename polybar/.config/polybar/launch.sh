@@ -12,6 +12,6 @@ killall -q polybar
 #  done
 #else
   polybar --reload cima &
-  sleep 1s
+  #sleep 1s
   polybar --reload baixo &
 #fi
