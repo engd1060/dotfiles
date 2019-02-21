@@ -171,18 +171,18 @@ label-mode-background = #e60053
 
 label-focused = %icon%
 label-focused-foreground = ${cores.background}
-label-focused-background = ${cores.color1}
+label-focused-background = ${cores.color7}
 label-focused-underline = ${cores.transparente}
 label-focused-padding = 1
 
 label-unfocused = %icon%
-label-unfocused-foreground = ${cores.color1}
+label-unfocused-foreground = ${cores.color7}
 label-unfocused-underline = ${cores.transparente}
 label-unfocused-padding = 1
 
 label-urgent = %icon%
-label-urgent-foreground = ${cores.color1}
-label-urgent-background = ${cores.color2}
+label-urgent-foreground = ${cores.color7}
+label-urgent-background = ${cores.color1}
 label-urgent-padding = 1
 
 # Janela
