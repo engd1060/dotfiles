@@ -98,7 +98,7 @@ bottom = true
 locale = pt_BR.UTF-8
 
 background = ${cores.transparente}
-foreground = ${cores.foreground}
+foreground = ${cores.color1}
 
 line-size = 0
 line-color = ${cores.vermelho}
@@ -435,7 +435,7 @@ label-indicator = A
 label-indicator-padding = 2
 
 #=========================================================================
-# MENU
+# MENU Power
 #=========================================================================
 
 [module/power-menu]
