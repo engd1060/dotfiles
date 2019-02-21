@@ -231,7 +231,7 @@ exec = echo $USER@$HOSTNAME
 [module/GPU-temp]
 type = internal/temperature
 interval = 1
-hwmon-path = /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/hwmon/hwmon2/temp1_input
+hwmon-path = /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/hwmon/hwmon3/temp1_input
 
 format = <label>
 label = GPU  %temperature-c%
@@ -283,7 +283,6 @@ label =  %percentage%%
 [module/cpu-temp]
 type = internal/temperature
 interval = 1.0
-#format-prefix = "%{F#dd5555} "
 hwmon-path = /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
 units = true
 
@@ -383,7 +382,7 @@ interval = 1.0
 
 format-connected = <label-connected> <ramp-signal>
 format-packetloss = <animation-packetloss>
-label-connected = %upspeed% %downspeed% 直%essid%
+label-connected = ﰵ %upspeed% | ﰬ %downspeed% 直%essid%
 
 ramp-signal-0 = ○○○○○
 ramp-signal-1 = ●○○○○
