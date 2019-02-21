@@ -98,7 +98,7 @@ bottom = true
 locale = pt_BR.UTF-8
 
 background = ${cores.transparente}
-foreground = ${cores.color1}
+foreground = ${cores.color7}
 
 line-size = 0
 line-color = ${cores.vermelho}
