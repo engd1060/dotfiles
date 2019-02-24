@@ -176,12 +176,13 @@ bindsym $mod+r mode "resize"
 
 # Regras de Janelas
 # sudo xprop | grep -i 'class' # para descobrir a class
-for_window [class="TelegramDesktop"] move to workspace 3, floating enable, resize set 1000 px 810 px
-for_window [class="code-oss"] move to workspace 5
-for_window [class="Spotify|vlc"] move to workspace 4
+
 for_window [class="Firefox"] move to workspace 2
-for_window [class="QGIS3|Freecad"] move to workspace 8
+for_window [class="TelegramDesktop"] move to workspace 3, floating enable, resize set 1000 px 810 px
+for_window [class="Spotify|vlc"] move to workspace 4
+for_window [class="code-oss"] move to workspace 5
 for_window [class="okular"] move to workspace 6
+for_window [class="QGIS3|Freecad|Gimp-2.10"] move to workspace 8
 for_window [class="Steam"] move to workspace 9
 for_window [class="vlc"] move to workspace v
 
@@ -208,7 +209,5 @@ client.background       $bg
 exec_always --no-startup-id $HOME/.local/bin/compton.sh
 exec_always --no-startup-id numlockx &
 exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
-# executar o polybar depois do wallpaper
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id polybar -r cima &
-exec_always --no-startup-id polybar -r baixo &
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
