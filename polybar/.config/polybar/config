@@ -64,7 +64,7 @@ tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
-wm-restack = i3
+;wm-restack = i3
 wm-name = i3
 override-redirect = false 
 
@@ -110,7 +110,7 @@ font-1 = Anonymice Nerd Font:style=Regular:size=10;0
 ;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
-modules-left = powermenu filesystem memory cpu temperature 
+modules-left = powermenu fs-root fs-home fs-hd1tb fs-win memory cpu temperature 
 modules-center =  
 modules-right = eth xbacklight pulseaudio wlan 
 
@@ -118,7 +118,7 @@ tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
-wm-restack = i3
+;wm-restack = i3
 wm-name = i3
 override-redirect = false 
 
@@ -136,7 +136,8 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = ﬓ %title:0:50:...%
+label-empty = [ vazio ]
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -149,22 +150,80 @@ format-prefix-underline = ${colors.secondary}
 label-layout = %layout%
 label-layout-underline = ${colors.secondary}
 
-label-indicator-padding = 2
+label-indicator = A
+label-indicator-padding = 1
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
 
-[module/filesystem]
+[module/fs-root]
 type = internal/fs
 interval = 25
 
 mount-0 = /
-mount-1 = /home
-;mount-2 = /mnt/HD-1TB
+format-mounted-prefix = " "
+format-mounted = <label-mounted>
+format-unmounted = <label-unmounted>
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
+; Available tokens:
+;   %mountpoint%
+;   %type%
+;   %fsname%
+;   %percentage_free%
+;   %percentage_used%
+;   %total%
+;   %free%
+;   %used%
+label-mounted = %percentage_used%%
+
+; Available tokens:
+;   %mountpoint%
+; Default: %mountpoint% is not mounted
+label-unmounted = not mounted
+label-unmounted-foreground = #55
+
+[module/fs-home]
+type = internal/fs
+interval = 25
+
+mount-0 = /home
+format-mounted-prefix = " "
+format-mounted = <label-mounted>
+format-unmounted = <label-unmounted>
+
+label-mounted = %percentage_used%%
+
+label-unmounted = not mounted
+label-unmounted-foreground = #55
+
+[module/fs-win]
+type = internal/fs
+interval = 25
+
+mount-0 = /mnt/HD-Windows
+format-mounted-prefix = " "
+format-mounted = <label-mounted>
+label-mounted = %percentage_used%%
+
+format-unmounted-prefix = " "
+format-unmounted = <label-unmounted>
+label-unmounted = not mounted
+label-unmounted-foreground = #55
+
+[module/fs-hd1tb]
+type = internal/fs
+interval = 25
+
+mount-0 = /mnt/HD-1TB
+format-mounted-prefix = " "
+format-mounted = <label-mounted>
+label-mounted = %percentage_used%%
+
+format-unmounted-prefix = "  "
+format-unmounted = <label-unmounted>
+label-unmounted = not mounted
+label-unmounted-foreground = #55
+
 
 [module/i3]
 type = internal/i3
@@ -173,23 +232,36 @@ index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
-label-mode-padding = 2
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;龎
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = v;
+ws-icon-10 = i;
+
+label-mode-padding = 1
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
+label-focused = %icon%
+label-focused-background = ${colors.foreground}
+label-focused-foreground = ${colors.background}
 label-focused-underline = ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 1 
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
-label-unfocused-padding = 2
+label-unfocused = %icon%
+label-unfocused-padding = 1
 
-; visible = Active workspace on unfocused monitor
+
 label-visible = %index%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
