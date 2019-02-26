@@ -228,8 +228,8 @@ label-unmounted-foreground = #55
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
-index-sort = true
-wrapping-scroll = false
+index-sort = false 
+wrapping-scroll = true 
 
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
@@ -277,6 +277,10 @@ label-urgent-padding = 2
 
 
 [module/mpd]
+
+; a ser implementado
+
+
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
@@ -291,7 +295,7 @@ label-song-ellipsis = true
 
 [module/xbacklight]
 type = internal/xbacklight
-
+output = DisplayPort-0
 format = <label> <bar>
 label = BL
 
