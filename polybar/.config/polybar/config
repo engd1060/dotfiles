@@ -17,10 +17,10 @@
 ;==========================================================
 
 [colors]
-background = ${xrdb:color2:#222}
-background-alt = ${xrdb:color3:#444}
+background = ${xrdb:color3:#222}
+background-alt = ${xrdb:color4:#444}
 foreground = ${xrdb:color1:#222}
-foreground-alt = ${xrdb:color4:#555}
+foreground-alt = ${xrdb:color2:#555}
 primary = ${xrdb:color5:#ffb52a}
 secondary = ${xrdb:color6:#e60053}
 alert = ${xrdb:color7:#bd2c40}
@@ -293,23 +293,6 @@ icon-next = 
 label-song-maxlen = 25
 label-song-ellipsis = true
 
-[module/xbacklight]
-type = internal/xbacklight
-output = DisplayPort-0
-format = <label> <bar>
-label = BL
-
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
-
 
 [module/cpu]
 type = internal/cpu
@@ -385,7 +368,9 @@ label = %date% %time%
 [module/cal]
 type = custom/text
 content = 
-click-left = dunstify -t 2500 "$(cal | sed -E "s/..(\s)/&\1/g;s/\s(\b$(date +%d)\b)\s?/    [\1]/")"
+click-left = dunstify -t 3000 "$(cal; echo 'hoje é:' "$(date +%A", "%d)")"
+scroll-up = dunstify -t 5000 "$(cal `date --date="1 month" +%m" "%Y`)"
+scroll-down = dunstify -t 5000 "$(cal `date --date="-1 month" +%m" "%Y`)"
 
 
 [module/pulseaudio]
@@ -452,16 +437,20 @@ label-separator = " | "
 
 menu-0-0 =  Browsers
 menu-0-0-exec = menu-open-1
-menu-0-1 =   Multimedia
+menu-0-1 =  Multimedia
 menu-0-1-exec = menu-open-2
 
+menu-0-2 =   Telegram
+menu-0-2-exec = telegram-desktop &
+
+; menu-open-1
 menu-1-0 =  Firefox
 menu-1-0-exec = firefox &
 menu-1-1 =  Chromium
 menu-1-1-exec = chromium &
 
-menu-2-0 
-Gimp
+;menu-open-2
+menu-2-0 =  Gimp
 menu-2-0-exec = gimp &
 menu-2-1 =  Scrot
 menu-2-1-exec = scrot &
@@ -475,7 +464,7 @@ menu-2-2-exec = spotify &
 ; steam 
 ; print 
 ; twitter 
-
+; github 
 
 [module/menu-power]
 type = custom/menu
