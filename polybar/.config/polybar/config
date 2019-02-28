@@ -160,8 +160,8 @@ label-indicator-underline = ${colors.secondary}
 type = internal/fs
 interval = 25
 
-mount-0 = /
-format-mounted-prefix = " "
+mount-0 = / 
+format-mounted-prefix = " "
 format-mounted = <label-mounted>
 format-unmounted = <label-unmounted>
 
@@ -179,7 +179,7 @@ label-mounted = %percentage_used%%
 ; Available tokens:
 ;   %mountpoint%
 ; Default: %mountpoint% is not mounted
-label-unmounted = not mounted
+label-unmounted = 
 label-unmounted-foreground = #55
 
 [module/fs-home]
@@ -215,11 +215,11 @@ type = internal/fs
 interval = 25
 
 mount-0 = /mnt/HD-1TB
-format-mounted-prefix = " "
+format-mounted-prefix = " " 
 format-mounted = <label-mounted>
 label-mounted = %percentage_used%%
 
-format-unmounted-prefix = "  "
+format-unmounted-prefix = 
 format-unmounted = <label-unmounted>
 label-unmounted = not mounted
 label-unmounted-foreground = #55
@@ -446,24 +446,35 @@ type = custom/menu
 
 expand-right = true
 
-label-open = Apps
-label-close = x
-separetor = " | " 
+label-open = 異Apps
+label-close = ﰸ
+label-separator = " | " 
 
-menu-0-0 = Browsers
+menu-0-0 =  Browsers
 menu-0-0-exec = menu-open-1
-menu-0-1 = Multimedia
+menu-0-1 =   Multimedia
 menu-0-1-exec = menu-open-2
 
-menu-1-0 = Firefox
+menu-1-0 =  Firefox
 menu-1-0-exec = firefox &
-menu-1-1 = Chromium
+menu-1-1 =  Chromium
 menu-1-1-exec = chromium &
 
-menu-2-0 = Gimp
+menu-2-0 
+Gimp
 menu-2-0-exec = gimp &
-menu-2-1 = Scrot
+menu-2-1 =  Scrot
 menu-2-1-exec = scrot &
+menu-2-2 = 阮 Spotify
+menu-2-2-exec = spotify &
+
+; icons 
+; telegram  
+; chat 
+; whatsapp 
+; steam 
+; print 
+; twitter 
 
 
 [module/menu-power]
