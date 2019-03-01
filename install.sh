@@ -7,14 +7,14 @@ function dotfiles(){
 }
 
 function stows(){
-stow home
-stow i3
-stow polybar
+    stow home
+    stow i3
+    stow polybar
 }
 
 function install(){
-dotfiles
-stows
+    dotfiles
+    stows
 }
 
 # Coloque seu usuário
