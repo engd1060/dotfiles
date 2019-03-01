@@ -1,8 +1,8 @@
 #!/bin/bash
 
 function dotfiles(){
-    sudo rm -rf $HOME/.dotfiles
-    sudo cp -r $HOME/github/dotfiles $HOME/.dotfiles
+    rm -rf $HOME/.dotfiles
+    cp -r $HOME/github/dotfiles $HOME/.dotfiles
     cd $HOME/.dotfiles
 }
 
