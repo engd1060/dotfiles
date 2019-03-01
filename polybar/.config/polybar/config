@@ -25,6 +25,7 @@ primary = ${xrdb:color5:#ffb52a}
 secondary = ${xrdb:color6:#e60053}
 alert = ${xrdb:color7:#bd2c40}
 transparente = #00000000
+semi-transp = #99000000
 
 [bar/top]
 monitor = ${env:MONITOR:DisplayPort-0}
@@ -35,7 +36,7 @@ height = 22
 radius = 0.0
 fixed-center = true
 
-background = ${colors.background}
+background = ${colors.semi-transp}
 foreground = ${colors.foreground}
 
 line-size = 0 
@@ -89,7 +90,7 @@ radius = 0.0
 fixed-center = true
 bottom = true
  
-background = ${colors.background}
+background = ${colors.semi-transp}
 foreground = ${colors.foreground}
 
 line-size = 0 
