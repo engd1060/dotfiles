@@ -19,7 +19,7 @@
 [colors]
 background = ${xrdb:color3:#222}
 background-alt = ${xrdb:color4:#444}
-foreground = ${xrdb:color1:#222}
+foreground = ${xrdb:color7:#222}
 foreground-alt = ${xrdb:color2:#555}
 primary = ${xrdb:color5:#ffb52a}
 secondary = ${xrdb:color6:#e60053}
@@ -36,7 +36,7 @@ height = 22
 radius = 0.0
 fixed-center = true
 
-background = ${colors.semi-transp}
+background = ${colors.transparente}
 foreground = ${colors.foreground}
 
 line-size = 0 
@@ -90,7 +90,7 @@ radius = 0.0
 fixed-center = true
 bottom = true
  
-background = ${colors.semi-transp}
+background = ${colors.transparente}
 foreground = ${colors.foreground}
 
 line-size = 0 
@@ -377,7 +377,7 @@ scroll-down = dunstify -t 5000 "$(cal `date --date="-1 month" +%m" "%Y`)"
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume> 
 label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
 
