@@ -1,70 +1,97 @@
- #Please see https://i3wm.org/docs/userguide.html for a complete reference!
+# i3 config file (v4)
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+#
+# This config file uses keycodes (bindsym) and was written for the QWERTY
+# layout.
+#
+# To get a config file with the same key positions, but for your current
+# layout, use the i3-config-wizard
+#
 
-set $mod Mod4 
-set $alt Mod1 
-set $ctrl Control
-
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
 font pango:monospace 8
 
-# $mod para clicar e mover as janelas flutantes
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+#font pango:DejaVu Sans Mono 8
+
+# Before i3 v4.8, we used to recommend this one as the default:
+# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# The font above is very space-efficient, that is, it looks good, sharp and
+# clear in small sizes. However, its unicode glyph coverage is limited, the old
+# X core fonts rendering does not support right-to-left and this being a bitmap
+# font, it doesn't scale on retina/hidpi displays.
+
+
+# Bordas das janelas normal|none|pixel
+default_border pixel 0 
+
+#hide_edge_borders none|vertical|horizontal|both|smart
+hide_edge_borders smart
+
+# GAPS
+smart_gaps on
+gaps inner 12
+gaps outer 8
+
+# Borders colors
+#                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER
+#client.focused          $bg         $black      $darkwhite  $darkblack  $darkblack
+#client.unfocused        $bg         $black      $white      $darkblack  $darkblack
+#client.focused_inactive $bg         $black      $white      $darkblack  $darkblack
+#client.urgent           $bg         $darkred    $black      $darkred    $darkred
+#client.background       $black
+
+
+
+# use these keys for focus, movement, and resize directions when reaching for
+# the arrows is not convenient
+set $up l
+set $down k
+set $left j
+set $right semicolon
+
+set $mod Mod4
+set $alt Mod1
+set $ctrl Control
+
+# use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# foco segue o mouse?
+# Foco segue o mouse
 focus_follows_mouse yes
 
-set $ws1 "1: terminal"
-set $ws2 "2: browser"
-set $ws3 "3: chats"
-set $ws4 "4: studio"
-set $ws5 "5: codes"
-set $ws6 "6: work"
-set $ws7 "7: pc"
-set $ws8 "8: art"
-set $ws9 "9: games"
-set $wsv "v:  video"
-#set $ws11 "11:  teste"
-#set $ws12 "12:  teste2"
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
 
-
-
-# Application shortcuts
-# bindsym [--release] [<Group>+][<Modifiers>+]<keysym> command
-# bindcode [--release] [<Group>+][<Modifiers>+]<keycode> command
-
-bindsym F10 exec --no-startup-id $HOME/.local/bin/git-cron.sh
-bindsym F11 exec --no-startup-id $HOME/github/dotfiles/install.sh
-bindsym $mod+Return exec --no-startup-id termite &
-bindsym Print exec --no-startup-id $HOME/.local/bin/screenshot.sh
-bindsym $alt+Tab exec --no-startup-id rofi -show window
-
-
-#bindcode 114 exec --nostartup-id termite -e htop
-#bindsym $mod+F1 exec --nostartup-id termite -e htop
-
-# Next workspaces
-bindsym $mod+Tab workspace next
-
-# Restart i3
-bindsym $mod+Shift+r restart
-
-
-#bindsym --release $mod+K exec --no-startup-id $HOME/.local/bin/screencast.sh
-
-# Audio/Brightness Control
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -u -i 5
-#bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -u -d 5e
-#bindsym XF86AudioMute exec --no-startup-id pamixer -m
-
-#bindsym XF86MonBrightnessUp exec  --no-startup-id echo $((`cat /sys/class/backlight/intel_backlight/brightness` + 10)) | sudo tee /sys/class/backlight/intel_backlight/brightness
-#bindsym XF86MonBrightnessDown exec  --no-startup-id echo $((`cat /sys/class/backlight/intel_backlight/brightness` - 10)) | sudo tee /sys/class/backlight/intel_backlight/brightness
-
-# Close window
+# kill focused window
 bindsym $mod+q kill
 
-# Start Rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun -display-run -show-icons -width 30 "Arch Linux -" -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg"
+# start dmenu (a program launcher)
+bindsym $mod+d exec --no-startup-id rofi -show drun -display-run -show-icons -width 30 "Arch Linux -" -nb "$fg" -nf     "$bg" -sb "$bg" -sf "$fg"   
 
-# Move windows
+
+# change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -76,95 +103,105 @@ bindsym $mod+h split h
 # split in vertical orientation
 bindsym $mod+v split v
 
-# Enter fullscreen mode with window focused
+# enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-bindsym $alt+f fullscreen toggle
-bindsym $alt+Return fullscreen toggle
 
-# Floating window
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
-bindsym $ctrl+space floating toggle
 
-# Change container layout ('default', 'stacked', 'stacking', 'tabbed', 'splitv', 'splith', 'toggle')
-bindsym $mod+t layout tabbed
-bindsym $mod+Shift+t layout toggle
-
-# Chang focus between tiling / floating windows
+# change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# Workspaces
-#bindsym $mod+1 workspace $ws1
-#bindsym $mod+2 workspace $ws2
-#bindsym $mod+3 workspace $ws3
-#bindsym $mod+4 workspace $ws4
-#bindsym $mod+5 workspace $ws5
-#bindsym $mod+6 workspace $ws6
-#bindsym $mod+7 workspace $ws7
-#bindsym $mod+8 workspace $ws8
-#bindsym $mod+9 workspace $ws9
+# focus the parent container
+bindsym $mod+a focus parent
 
-# mais de 10 WS
-set $mode_workspace "goto_ws"
-mode $mode_workspace {
-    bindsym 1 workspace 1; mode "default"
-    bindsym 2 workspace 2; mode "default"
-    bindsym 3 workspace 3; mode "default"
-    bindsym 4 workspace 4; mode "default"
-    bindsym 5 workspace 5; mode "default"
-    bindsym 6 workspace 6; mode "default"
-    bindsym 7 workspace 7; mode "default"
-    bindsym 8 workspace 8; mode "default"
-    bindsym 9 workspace 9; mode "default"
-    bindsym v workspace v; mode "default"
-    # […]
-    bindsym Escape mode "default"
-    bindsym w mode "default"
-}
-bindsym $mod+w mode $mode_workspace
+# focus the child container
+#bindsym $mod+d focus child
 
-set $mode_move_to_workspace "moveto_ws"
-mode $mode_move_to_workspace {
-    bindsym 1 move window to workspace 1; mode "default"
-    bindsym 2 move window to workspace 2; mode "default"
-    bindsym 3 move window to workspace 3; mode "default"
-    bindsym 4 move window to workspace 4; mode "default"
-    bindsym 5 move window to workspace 5; mode "default"
-    bindsym 6 move window to workspace 6; mode "default"
-    bindsym 7 move window to workspace 7; mode "default"
-    bindsym 8 move window to workspace 8; mode "default"
-    bindsym 9 move window to workspace 9; mode "default"
-    bindsym v move window to workspace v; mode "default"
-    #bindsym 11 move container to workspace 11; mode "default"
-    #bindsym 12 move container to workspace 12; mode "default"
-    #[…]
-    bindsym Escape mode "default"
-    bindsym w mode "default"
-}
-bindsym $mod+shift+w mode $mode_move_to_workspace
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 
-# Gaps
-gaps inner 15
-gaps outer 5
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
-#hide_edge_borders smart
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
 
-#smart_borders enable
+# alterna para ultima workspace exibida
+bindsym $mod+Tab workspace back_and_forth
 
-new_window none
-for_window [class="^.*"] border pixel 0
+# Navega pelas janelas e WS usando o rofi
+bindsym $alt+Tab exec --no-startup-id rofi -show window
 
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
 mode "resize" {
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+        # These bindings trigger as soon as you enter the resize mode
 
-        bindsym Left resize shrink width 5 px or 5 ppt
-        bindsym Down resize grow height 5 px or 5 ppt
-        bindsym Up resize shrink height 5 px or 5 ppt
-        bindsym Right resize grow width 5 px or 5 ppt
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym $left       resize shrink width 10 px or 10 ppt
+        bindsym $down       resize grow height 10 px or 10 ppt
+        bindsym $up         resize shrink height 10 px or 10 ppt
+        bindsym $right      resize grow width 10 px or 10 ppt
 
+        # same bindings, but for the arrow keys
+        bindsym Left        resize shrink width 10 px or 10 ppt
+        bindsym Down        resize grow height 10 px or 10 ppt
+        bindsym Up          resize shrink height 10 px or 10 ppt
+        bindsym Right       resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
@@ -174,40 +211,37 @@ bindsym $mod+r mode "resize"
 
 
 
-# Regras de Janelas
+
+
+
+# Atalhos de apps
+
+# Taking a Screenshot
+bindsym --release Print exec --no-startup-id "maim -p 0 -c 0.96,0.5,0.09 $HOME/Imagens/Screenshots/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"
+
+bindsym --release Shift+Print exec --no-startup-id "maim -s -p 0 -c 0.96,0.5,0.09 $HOME/Imagens/Screenshots/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png" 
+
+
+
+# comportamento de janelas
 # sudo xprop | grep -i 'class' # para descobrir a class
 
-for_window [class="Firefox"] move to workspace 2
-for_window [class="TelegramDesktop"] move to workspace 3, floating enable, resize set 1000 px 810 px
-for_window [class="Spotify|vlc"] move to workspace 4
-for_window [class="code-oss"] move to workspace 5
-for_window [class="okular"] move to workspace 6
-for_window [class="QGIS3|Freecad|Gimp-2.10"] move to workspace 8
-for_window [class="Steam"] move to workspace 9
-for_window [class="vlc"] move to workspace v
+for_window [class="TelegramDesktop"] move to workspace $ws3, floating enable, resize set 1000 px 810 px
+for_window [class="code-oss"] move to workspace $ws5
+for_window [class="Spotify|vlc"] move to workspace $ws4
+for_window [class="Firefox"] move to workspace $ws2
+for_window [class="QGIS3|Freecad"] move to workspace $ws8
+for_window [class="okular"] move to workspace $w6
+for_window [class="Steam"] move to workspace $ws9
+for_window [class="vlc"] move to workspace $ws10
 
-# Set colors from Xresources
-# Change 'color7' and 'color2' to whatever colors you want i3 to use 
-# from the generated scheme.
-# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
-# it fails to get colors from Xresources.
-set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
 
-# class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $fg  $bg       $bg
-client.focused_inactive $bg     $bg     $fg  $bg       $bg
-client.unfocused        $bg     $bg     $fg  $bg       $bg
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
 
-client.background       $bg
 
-# Startup
+# Executar na inicialização
 
-#exec_always --no-startup-id $HOME/.local/bin/xrandr.sh
-
-exec_always --no-startup-id $HOME/.local/bin/wallpaper.sh
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.local/bin/wallpapper.sh
 exec_always --no-startup-id $HOME/.local/bin/compton.sh
-exec_always --no-startup-id numlockx &
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id numlockx & 
+
